@@ -4,7 +4,7 @@
 ## Zishuo Yang, 2018-02-01
 ## ------------------------------------------------------------
 
-j = Job( name = '2012MC_MD_Bc2JpsiTau') #application = Gauss(platform='x86_64-slc6-gcc49-opt', version='v42r5p1') , backend = Dirac() )
+j = Job( name = '2012MC_MU_Bc2JpsiTau') #application = Gauss(platform='x86_64-slc6-gcc49-opt', version='v42r5p1') , backend = Dirac() )
 myApp = GaudiExec() #'DaVinci', 'v42r5p1', myPath='/afs/cern.ch/user/z/ziyang/cmtuser/')
 myApp.directory='/afs/cern.ch/user/z/ziyang/work/RJpsiAnalysis/DaVinciDev_v44r5'
 j.application = myApp
@@ -18,7 +18,7 @@ j.inputfiles = [LocalFile("/afs/cern.ch/user/z/ziyang/work/RJpsiAnalysis/RJpsiLx
 j.application.options = [
                         "/afs/cern.ch/user/z/ziyang/work/RJpsiAnalysis/RJpsiLxplusCode/davinci/options/Bc_JpsiTau_MC.py",
                         ]
-j.application.readInputData("DST/MC_2012_14643048_Beam4000GeV2012MagDownNu2.5BcVegPy_Sim08e_Digi13_Trig0x409f0045_Reco14a_Stripping20NoPrescalingFlagged_ALLSTREAMS.DST.py")
+j.application.readInputData("DST/MC_2012_14643048_Beam4000GeV2012MagUpNu2.5BcVegPy_Sim08i_Digi13_Trig0x409f0045_Reco14c_Stripping20NoPrescalingFlagged_ALLSTREAMS.DST.py")
 j.backend = Dirac()
 j.outputfiles = [ DiracFile("Bc_JpsiTau_MC.root") ] 
 #j.backend.settings['BannedSites'] = ['LGC.CERN.cern'] #CERN sites failed all last time
