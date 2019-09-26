@@ -6,7 +6,7 @@ import ROOT
 import sys
 
 targetDir = "/eos/user/z/ziyang/RJpsi/tuples/"
-targetFileName = "2012_MC_JpsiMuNu"
+targetFileName = "2012_MC_Psi2SMu"
 sourceTreeName = "JpsiRecTuple/DecayTree"
 
 fname = str(sys.argv[1])
@@ -42,9 +42,10 @@ if numOutputFiles == 1:
         chain.AddFile(url)
     chain.Merge(listFileNames[0])
     print("-> Done merging "+listFileNames[0])
-    chain.Draw("Bc_M") 
-    raw_input("press ENTER to close")
-    
+    #chain.Draw("Bc_M") 
+    #raw_input("press ENTER to close")
+    #input("Press ENTER to close")    
+ 
 elif numOutputFiles > 1:
     for i in range(0,numOutputFiles):
         fullName = targetDir+targetFileName+str(i)+".root"
