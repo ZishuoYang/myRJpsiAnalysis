@@ -84,8 +84,12 @@ hist_z1->GetXaxis()->SetTitle("Z (q^2, E*_mu)");
 hist_z1->GetYaxis()->SetTitle("");
 hist_z1->SetLineColor(kRed);
 hist_z2->SetLineColor(kBlue);
-hist_z1->Draw("HIST");
-hist_z2->Draw("same");
+hist_z1->Draw();
+gPad->Update();
+TPaveStats *st_z1 = (TPaveStats*)hist_z1->FindObject("stats");
+st_z1->SetX1NDC(0.58);
+st_z1->SetX2NDC(0.78);
+hist_z2->Draw("SAMES");
 c_z->SaveAs(filepath+"Z_q2_El"+".png");
 
 
@@ -114,11 +118,14 @@ hist1a->SetMaximum(max1*1.1);
 hist1a->SetTitle("");
 hist1a->GetXaxis()->SetTitle(title1);
 hist1a->GetYaxis()->SetTitle("");
-//TPaveStats *st = (TPaveStats*)hist1->GetListOfFunctions()->FindObject("stats");
-//st->SetX1NDC(0.6);
-//st->SetX2NDC(0.8);
 hist1a->Draw();
+//hist1b->Draw("SAMES");
+gPad->Update();
+TPaveStats *st_1a = (TPaveStats*)hist1a->FindObject("stats");
+st_1a->SetX1NDC(0.58);
+st_1a->SetX2NDC(0.78);
 hist1b->Draw("SAMES");
+
 c1->SaveAs(filepath+title1+".png");
 
 // Draw in canvas
@@ -147,6 +154,10 @@ hist2a->SetTitle("");
 hist2a->GetXaxis()->SetTitle(title2);
 hist2a->GetYaxis()->SetTitle("");
 hist2a->Draw();
+gPad->Update();
+TPaveStats *st_2a = (TPaveStats*)hist2a->FindObject("stats");
+st_2a->SetX1NDC(0.58);
+st_2a->SetX2NDC(0.78);
 hist2b->Draw("SAMES");
 c2->SaveAs(filepath+title2+".png");
 
@@ -176,6 +187,10 @@ hist3a->SetTitle("");
 hist3a->GetXaxis()->SetTitle(title3);
 hist3a->GetYaxis()->SetTitle("");
 hist3a->Draw();
+gPad->Update();
+TPaveStats *st_3a = (TPaveStats*)hist3a->FindObject("stats");
+st_3a->SetX1NDC(0.58);
+st_3a->SetX2NDC(0.78);
 hist3b->Draw("SAMES");
 c3->SaveAs(filepath+title3+".png");
 
@@ -205,6 +220,10 @@ hist4a->SetTitle("");
 hist4a->GetXaxis()->SetTitle(title4);
 hist4a->GetYaxis()->SetTitle("");
 hist4a->Draw();
+gPad->Update();
+TPaveStats *st_4a = (TPaveStats*)hist4a->FindObject("stats");
+st_4a->SetX1NDC(0.58);
+st_4a->SetX2NDC(0.78);
 hist4b->Draw("SAMES");
 c4->SaveAs(filepath+title4+".png");
 }
