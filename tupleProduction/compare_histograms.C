@@ -8,7 +8,7 @@
 void compare_histograms()
 {
 // Set output filepath
-TString filepath = "./plots/projection_for_MC/";
+TString filepath = "./plots/compare/";
 
 // Get input
 TFile *inputFile1 = new TFile("~/my_eos/RJpsi/tuples/2012_MC_JpsiTauNu.root");
