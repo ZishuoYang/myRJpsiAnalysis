@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By PoolXMLCatalog.py -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+
+<File ID="FCDB7E5F-30A7-E811-825F-0242AC110012">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.echo.stfc.ac.uk/lhcb:prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0000/00077434_00004706_1.dimuon.dst" se="RAL-DST"/>
+      <pfn filetype="ROOT_All" name="root://lpnse1.in2p3.fr:1094//dpm/in2p3.fr/home/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0000/00077434_00004706_1.dimuon.dst" se="LPNHE-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0000/00077434_00004706_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="5002EC0C-C370-E811-8514-0CC47A18940E">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://lhcb-sdpd1.t1.grid.kiae.ru:1094/t1.grid.kiae.ru/data/lhcb/lhcbdisk/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0000/00075559_00005487_1.dimuon.dst" se="RRCKI-DST"/>
+      <pfn filetype="ROOT_All" name="root://lhcbxrootd-kit.gridka.de//pnfs/gridka.de/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0000/00075559_00005487_1.dimuon.dst" se="GRIDKA-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0000/00075559_00005487_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="0E98B678-5ABD-E811-A46F-0242AC11000E">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.echo.stfc.ac.uk/lhcb:prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0005/00077434_00051717_1.dimuon.dst" se="RAL-DST"/>
+      <pfn filetype="ROOT_All" name="root://lhcb-sdpd6.t1.grid.kiae.ru:1094/t1.grid.kiae.ru/data/lhcb/lhcbdisk/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0005/00077434_00051717_1.dimuon.dst" se="RRCKI-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0005/00077434_00051717_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="6A901D8B-1E77-E811-8617-0242AC110012">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00032647_1.dimuon.dst" se="CERN-DST-EOS"/>
+      <pfn filetype="ROOT_All" name="root://xrootd.echo.stfc.ac.uk/lhcb:prod/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00032647_1.dimuon.dst" se="RAL-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00032647_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="EC4F64F8-8975-E811-8CEE-A4BF01125BA0">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://lhcbxrootd-kit.gridka.de//pnfs/gridka.de/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00026334_1.dimuon.dst" se="GRIDKA-DST"/>
+      <pfn filetype="ROOT_All" name="root://door04.pic.es:1094/pnfs/pic.es/data/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00026334_1.dimuon.dst" se="PIC-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00026334_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="6AC377A6-34C7-E811-81B1-0090FAA59184">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd-lhcb.cr.cnaf.infn.it//storage/gpfs_lhcb/lhcb/disk/LHCb/Collision18/DIMUON.DST/00079436/0000/00079436_00000098_1.dimuon.dst" se="CNAF-DST"/>
+      <pfn filetype="ROOT_All" name="root://door08.pic.es:1094/pnfs/pic.es/data/lhcb/LHCb/Collision18/DIMUON.DST/00079436/0000/00079436_00000098_1.dimuon.dst" se="PIC-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00079436/0000/00079436_00000098_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="9A851DBA-2F76-E811-ACC9-3417EBE645D6">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd-lhcb.cr.cnaf.infn.it//storage/gpfs_lhcb/lhcb/disk/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00031180_1.dimuon.dst" se="CNAF-DST"/>
+      <pfn filetype="ROOT_All" name="root://ccxrootdlhcb.in2p3.fr//pnfs/in2p3.fr/data/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00031180_1.dimuon.dst" se="IN2P3-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00031180_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="A2B8140A-14B5-E811-BDD2-008CFAFBE8F2">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://ccxrootdlhcb.in2p3.fr//pnfs/in2p3.fr/data/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0002/00077434_00029999_1.dimuon.dst" se="IN2P3-DST"/>
+      <pfn filetype="ROOT_All" name="root://lhcbxrootd-kit.gridka.de//pnfs/gridka.de/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0002/00077434_00029999_1.dimuon.dst" se="GRIDKA-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0002/00077434_00029999_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="ACFE0ACC-E684-E811-8CE1-A0369FE2C206">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00039636_1.dimuon.dst" se="CERN-DST-EOS"/>
+      <pfn filetype="ROOT_All" name="root://xrootd-lhcb.cr.cnaf.infn.it//storage/gpfs_lhcb/lhcb/disk/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00039636_1.dimuon.dst" se="CNAF-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0003/00075559_00039636_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="FE267E4F-83C7-E811-B7C4-0090FAA59E44">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/LHCb/Collision18/DIMUON.DST/00079436/0000/00079436_00000545_1.dimuon.dst" se="CERN-DST-EOS"/>
+      <pfn filetype="ROOT_All" name="root://xrootd-lhcb.cr.cnaf.infn.it//storage/gpfs_lhcb/lhcb/disk/LHCb/Collision18/DIMUON.DST/00079436/0000/00079436_00000545_1.dimuon.dst" se="CNAF-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00079436/0000/00079436_00000545_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="66AE5DD3-DDB0-E811-8A6D-0242AC11000D">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.echo.stfc.ac.uk/lhcb:prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0002/00077434_00021730_1.dimuon.dst" se="RAL-DST"/>
+      <pfn filetype="ROOT_All" name="root://ccxrootdlhcb.in2p3.fr//pnfs/in2p3.fr/data/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0002/00077434_00021730_1.dimuon.dst" se="IN2P3-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0002/00077434_00021730_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="BAFD7565-62A7-E811-90DC-0242AC110002">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0000/00077434_00005291_1.dimuon.dst" se="CERN-DST-EOS"/>
+      <pfn filetype="ROOT_All" name="root://xrootd.echo.stfc.ac.uk/lhcb:prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0000/00077434_00005291_1.dimuon.dst" se="RAL-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0000/00077434_00005291_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="266D62A5-0575-E811-B737-001E677924D6">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://ccxrootdlhcb.in2p3.fr//pnfs/in2p3.fr/data/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00021224_1.dimuon.dst" se="IN2P3-DST"/>
+      <pfn filetype="ROOT_All" name="root://lhcbxrootd-kit.gridka.de//pnfs/gridka.de/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00021224_1.dimuon.dst" se="GRIDKA-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00021224_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="80F9D983-33BA-E811-B22B-AC1F6B0DE34C">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd-lhcb.cr.cnaf.infn.it//storage/gpfs_lhcb/lhcb/disk/LHCb/Collision18/DIMUON.DST/00077434/0004/00077434_00042957_1.dimuon.dst" se="CNAF-DST"/>
+      <pfn filetype="ROOT_All" name="root://xrootd.esc.qmul.ac.uk//mnt/lustre_2/storm_3/lhcbdisk/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0004/00077434_00042957_1.dimuon.dst" se="UKI-LT2-QMUL-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0004/00077434_00042957_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="42E08136-3F74-E811-A8DD-0090FAA57270">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd-lhcb.cr.cnaf.infn.it//storage/gpfs_lhcb/lhcb/disk/LHCb/Collision18/DIMUON.DST/00075559/0001/00075559_00014048_1.dimuon.dst" se="CNAF-DST"/>
+      <pfn filetype="ROOT_All" name="root://lhcb-sdpd6.t1.grid.kiae.ru:1094/t1.grid.kiae.ru/data/lhcb/lhcbdisk/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0001/00075559_00014048_1.dimuon.dst" se="RRCKI-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0001/00075559_00014048_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="F4ADAEF8-5CB5-E811-BE9B-00265521C4A0">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd-lhcb.cr.cnaf.infn.it//storage/gpfs_lhcb/lhcb/disk/LHCb/Collision18/DIMUON.DST/00077434/0003/00077434_00030199_1.dimuon.dst" se="CNAF-DST"/>
+      <pfn filetype="ROOT_All" name="root://lobster11.grid.surfsara.nl:1094/pnfs/grid.sara.nl/data/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0003/00077434_00030199_1.dimuon.dst" se="SARA-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0003/00077434_00030199_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="0E58FFCB-7CBC-E811-AAF5-0242AC11000A">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.echo.stfc.ac.uk/lhcb:prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0004/00077434_00048924_1.dimuon.dst" se="RAL-DST"/>
+      <pfn filetype="ROOT_All" name="root://lhcb-sdpd12.t1.grid.kiae.ru:1094/t1.grid.kiae.ru/data/lhcb/lhcbdisk/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0004/00077434_00048924_1.dimuon.dst" se="RRCKI-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0004/00077434_00048924_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="7EAD0E26-4F75-E811-B42A-0242AC110010">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.echo.stfc.ac.uk/lhcb:prod/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00024454_1.dimuon.dst" se="RAL-DST"/>
+      <pfn filetype="ROOT_All" name="root://lhcb-sdpd6.t1.grid.kiae.ru:1094/t1.grid.kiae.ru/data/lhcb/lhcbdisk/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00024454_1.dimuon.dst" se="RRCKI-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00075559/0002/00075559_00024454_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="D08F31EB-B7A9-E811-B1C5-FA163E67E405">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0001/00077434_00010433_1.dimuon.dst" se="CERN-DST-EOS"/>
+      <pfn filetype="ROOT_All" name="root://door08.pic.es:1094/pnfs/pic.es/data/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0001/00077434_00010433_1.dimuon.dst" se="PIC-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0001/00077434_00010433_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="B0BB1189-DBAB-E811-8463-FA163EA45363">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0001/00077434_00013858_1.dimuon.dst" se="CERN-DST-EOS"/>
+      <pfn filetype="ROOT_All" name="root://lobster16.grid.surfsara.nl:1094/pnfs/grid.sara.nl/data/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0001/00077434_00013858_1.dimuon.dst" se="SARA-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0001/00077434_00013858_1.dimuon.dst"/>
+   </logical>
+</File>
+<File ID="1E6E16E2-D8B7-E811-B5E5-02163E00C7FD">
+   <physical>
+      <pfn filetype="ROOT_All" name="root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0003/00077434_00035962_1.dimuon.dst" se="CERN-DST-EOS"/>
+      <pfn filetype="ROOT_All" name="root://xrootd-lhcb.cr.cnaf.infn.it//storage/gpfs_lhcb/lhcb/disk/LHCb/Collision18/DIMUON.DST/00077434/0003/00077434_00035962_1.dimuon.dst" se="CNAF-DST"/>
+   </physical>
+   <logical>
+      <lfn name="/lhcb/LHCb/Collision18/DIMUON.DST/00077434/0003/00077434_00035962_1.dimuon.dst"/>
+   </logical>
+</File>
+
+</POOLFILECATALOG>

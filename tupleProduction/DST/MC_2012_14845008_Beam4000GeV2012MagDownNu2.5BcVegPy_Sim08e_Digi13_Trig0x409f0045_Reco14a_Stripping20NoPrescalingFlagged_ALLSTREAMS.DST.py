@@ -1,0 +1,48 @@
+#-- GAUDI jobOptions generated on Wed Aug 21 18:12:53 2019
+#-- Contains event types : 
+#--   14845008 - 25 files - 395496 events - 78.75 GBytes
+
+#--  Extra information about the data processing phases:
+
+#--  Processing Pass: '/Sim08e/Digi13/Trig0x409f0045/Reco14a/Stripping20NoPrescalingFlagged' 
+
+#--  StepId : 124629 
+#--  StepName : Merge14 for Sim08 
+#--  ApplicationName : LHCb 
+#--  ApplicationVersion : v35r4 
+#--  OptionFiles : $APPCONFIGOPTS/Merging/CopyDST.py 
+#--  DDDB : None 
+#--  CONDDB : None 
+#--  ExtraPackages : AppConfig.v3r164 
+#--  Visible : N 
+
+from Gaudi.Configuration import * 
+from GaudiConf import IOHelper
+IOHelper('ROOT').inputFiles([
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000004_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000022_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000015_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000002_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000009_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000020_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000007_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000005_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000003_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000018_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000001_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000008_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000017_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000025_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000006_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000011_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000024_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000023_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000019_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000014_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000016_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000010_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000021_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000013_1.allstreams.dst',
+'LFN:/lhcb/MC/2012/ALLSTREAMS.DST/00034393/0000/00034393_00000012_1.allstreams.dst',
+], clear=True)
+
