@@ -1,0 +1,8 @@
+root://lhcbxrootd-kit.gridka.de//pnfs/gridka.de/lhcb/user/z/ziyang/2019_09/306717/306717646/Bc_Psi2SMu_MC.root
+root://lhcbxrootd-kit.gridka.de//pnfs/gridka.de/lhcb/user/z/ziyang/2019_09/306717/306717650/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_09/306717/306717645/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_09/306717/306717643/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_09/306717/306717644/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_09/306717/306717649/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_09/306717/306717648/Bc_Psi2SMu_MC.root
+root://ccxrootdlhcb.in2p3.fr//pnfs/in2p3.fr/data/lhcb/user/z/ziyang/2019_09/306717/306717647/Bc_Psi2SMu_MC.root

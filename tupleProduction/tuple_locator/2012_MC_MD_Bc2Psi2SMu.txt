@@ -1,0 +1,9 @@
+root://xrootd.echo.stfc.ac.uk/lhcb:user/lhcb/user/z/ziyang/2019_08/300564/300564630/Bc_Psi2SMu_MC.root
+root://lhcbxrootd-kit.gridka.de//pnfs/gridka.de/lhcb/user/z/ziyang/2019_08/300564/300564632/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_08/300564/300564624/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_08/300564/300564627/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_08/300564/300564625/Bc_Psi2SMu_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_08/300564/300564628/Bc_Psi2SMu_MC.root
+root://lobster1.grid.surfsara.nl:1094/pnfs/grid.sara.nl/data/lhcb/user/z/ziyang/2019_08/300564/300564631/Bc_Psi2SMu_MC.root
+root://ccxrootdlhcb.in2p3.fr//pnfs/in2p3.fr/data/lhcb/user/z/ziyang/2019_08/300564/300564626/Bc_Psi2SMu_MC.root
+root://door04.pic.es:1094/pnfs/pic.es/data/lhcb/user/z/ziyang/2019_08/300564/300564629/Bc_Psi2SMu_MC.root

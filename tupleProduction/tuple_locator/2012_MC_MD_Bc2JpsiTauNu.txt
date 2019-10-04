@@ -1,0 +1,5 @@
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_08/300564/300564307/Bc_JpsiTau_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_08/300564/300564311/Bc_JpsiTau_MC.root
+root://eoslhcb.cern.ch//eos/lhcb/grid/user/lhcb/user/z/ziyang/2019_08/300564/300564310/Bc_JpsiTau_MC.root
+root://xrootd.echo.stfc.ac.uk/lhcb:user/lhcb/user/z/ziyang/2019_08/300564/300564313/Bc_JpsiTau_MC.root
+root://ccxrootdlhcb.in2p3.fr//pnfs/in2p3.fr/data/lhcb/user/z/ziyang/2019_08/300564/300564308/Bc_JpsiTau_MC.root
