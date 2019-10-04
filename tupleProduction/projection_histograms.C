@@ -9,10 +9,10 @@ void projection_histograms()
 {
 //-- Set output filepath
 TString filepath = "./plots/projection_for_MC/";
-TString id = "JpsiMuNu_";
+TString id = "JpsiTauNu_";
 
 //-- Get input
-TFile *inputFile1 = new TFile("~/my_eos/RJpsi/tuples/2012_MC_JpsiMuNu.root");
+TFile *inputFile1 = new TFile("~/my_eos/RJpsi/tuples/2012_MC_JpsiTauNu.root");
 TTree *myTree1 = (TTree*) inputFile1->Get("DecayTree");
 
 //-- Read tree and fill histogram
