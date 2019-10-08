@@ -8,7 +8,7 @@
 void project_compare_histograms()
 {
 // Set output filepath
-TString filepath = "./temp/";
+TString filepath = "./plots/projection_for_MC/";
 
 // Get input
 TFile *inputFile1 = new TFile("~/my_eos/RJpsi/tuples/2012_Data_MD_subset.root");
@@ -18,6 +18,7 @@ TTree *myTree2 = (TTree*) inputFile2->Get("DecayTree");
 
 // Read tree and fill histogram
 TCanvas *c_z = new TCanvas("c_z","c_z");
+//c_z->SetLogy();// draw with log scale Y
 TH1* hist_z1 = new TH1I("hist_z1","Z(q2,El)", 8, 0, 8);
 Double_t q2, El;
 myTree1->SetBranchAddress("FitVar_q2", &q2);
@@ -41,7 +42,7 @@ for (Int_t i=0;i<myTree1->GetEntries();i++) {
         else {cout<<"wrong El value"<<endl;}
         }
     hist_z1->Fill(Z);
-    if (i>10000) break;//
+    //if (i>10000) break;//
     }
 
 TH1* hist_z2 = new TH1I("hist_z2","Z(q2,El)", 8, 0, 8);
@@ -67,7 +68,7 @@ for (Int_t i=0;i<myTree2->GetEntries();i++) {
         else {cout<<"wrong El value"<<endl;}
         }
     hist_z2->Fill(Z);
-    if (i>10000) break;//
+    //if (i>10000) break;//
     }
 
 Double_t scale_z = hist_z2->Integral()/hist_z1->Integral();
@@ -91,6 +92,7 @@ c_z->SaveAs(filepath+"Z_q2_El"+".png");
 
 // Simply draw in canvas
 TCanvas *c1 = new TCanvas("c1","c1");
+c1->SetLogy();// draw with log scale Y
 TString title1 = "MissingMass2";
 TString temp1a = "1a";
 TString temp1b = "1b";
@@ -105,7 +107,7 @@ hist1a->Scale(scale1,"nosw2");
 hist1a->SetLineColor(kRed);
 hist1b->SetLineColor(kBlue);
 auto max1 = std::max(hist1a->GetMaximum(),hist1b->GetMaximum());
-hist1a->SetMaximum(max1*1.1);
+hist1a->SetMaximum(max1*10);
 hist1a->SetTitle("");
 hist1a->GetXaxis()->SetTitle(title1);
 hist1a->GetYaxis()->SetTitle("");
@@ -120,6 +122,7 @@ c1->SaveAs(filepath+title1+".png");
 
 // Draw in canvas
 TCanvas *c2 = new TCanvas("c2","c2");
+c2->SetLogy();// draw with log scale Y
 TString title2 = "q2";
 TString temp2a = "2a";
 TString temp2b = "2b";
@@ -134,7 +137,7 @@ hist2a->Scale(scale2,"nosw2");
 hist2a->SetLineColor(kRed);
 hist2b->SetLineColor(kBlue);
 auto max2 = std::max(hist2a->GetMaximum(),hist2b->GetMaximum());
-hist2a->SetMaximum(max2*1.1);
+hist2a->SetMaximum(max2*10);
 hist2a->SetTitle("");
 hist2a->GetXaxis()->SetTitle(title2);
 hist2a->GetYaxis()->SetTitle("");
@@ -148,6 +151,7 @@ c2->SaveAs(filepath+title2+".png");
 
 // Draw in canvas
 TCanvas *c3 = new TCanvas("c3","c3");
+c3->SetLogy();// draw with log scale Y
 TString title3 = "El";
 TString temp3a = "3a";
 TString temp3b = "3b";
@@ -162,7 +166,7 @@ hist3a->Scale(scale3,"nosw2");
 hist3a->SetLineColor(kRed);
 hist3b->SetLineColor(kBlue);
 auto max3 = std::max(hist3a->GetMaximum(),hist3b->GetMaximum());
-hist3a->SetMaximum(max3*1.1);
+hist3a->SetMaximum(max3*10);
 hist3a->SetTitle("");
 hist3a->GetXaxis()->SetTitle(title3);
 hist3a->GetYaxis()->SetTitle("");
@@ -176,6 +180,7 @@ c3->SaveAs(filepath+title3+".png");
 
 // Draw in canvas
 TCanvas *c4 = new TCanvas("c4","c4");
+c4->SetLogy();// draw with log scale Y
 TString title4 = "TAU";
 TString temp4a = "4a";
 TString temp4b = "4b";
@@ -190,7 +195,7 @@ hist4a->Scale(scale4,"nosw2");
 hist4a->SetLineColor(kRed);
 hist4b->SetLineColor(kBlue);
 auto max4 = std::max(hist4a->GetMaximum(),hist4b->GetMaximum());
-hist4a->SetMaximum(max4*1.1);
+hist4a->SetMaximum(max4*10);
 hist4a->SetTitle("");
 hist4a->GetXaxis()->SetTitle(title4);
 hist4a->GetYaxis()->SetTitle("");
