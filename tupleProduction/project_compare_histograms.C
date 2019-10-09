@@ -42,7 +42,7 @@ for (Int_t i=0;i<myTree1->GetEntries();i++) {
         else {cout<<"wrong El value"<<endl;}
         }
     hist_z1->Fill(Z);
-    //if (i>10000) break;//
+    if (i>10000) break;//
     }
 
 TH1* hist_z2 = new TH1I("hist_z2","Z(q2,El)", 8, 0, 8);
@@ -68,12 +68,11 @@ for (Int_t i=0;i<myTree2->GetEntries();i++) {
         else {cout<<"wrong El value"<<endl;}
         }
     hist_z2->Fill(Z);
-    //if (i>10000) break;//
+    if (i>10000) break;//
     }
 
 Double_t scale_z = hist_z2->Integral()/hist_z1->Integral();
 hist_z1->Scale(scale_z,"nosw2");
-//hist_z2->Scale(scale_z2,"nosw2");
 auto max_z = std::max(hist_z1->GetMaximum(),hist_z2->GetMaximum());
 hist_z1->SetMaximum(max_z*1.1);
 hist_z1->SetTitle("");
@@ -81,6 +80,7 @@ hist_z1->GetXaxis()->SetTitle("Z (q^2, E*_mu)");
 hist_z1->GetYaxis()->SetTitle("");
 hist_z1->SetLineColor(kRed);
 hist_z2->SetLineColor(kBlue);
+hist_z1->SetMinimum(0);
 hist_z1->Draw();
 gPad->Update();
 TPaveStats *st_z1 = (TPaveStats*)hist_z1->FindObject("stats");
@@ -92,7 +92,11 @@ c_z->SaveAs(filepath+"Z_q2_El"+".png");
 
 // Simply draw in canvas
 TCanvas *c1 = new TCanvas("c1","c1");
-c1->SetLogy();// draw with log scale Y
+c1->SetLogy();
+c1->SetGridx();
+c1->SetGridy();
+c1->SetTickx(1);
+c1->SetTicky(1);
 TString title1 = "MissingMass2";
 TString temp1a = "1a";
 TString temp1b = "1b";
@@ -111,6 +115,7 @@ hist1a->SetMaximum(max1*10);
 hist1a->SetTitle("");
 hist1a->GetXaxis()->SetTitle(title1);
 hist1a->GetYaxis()->SetTitle("");
+hist1a->SetMinimum(1);
 hist1a->Draw();
 gPad->Update();
 TPaveStats *st_1a = (TPaveStats*)hist1a->FindObject("stats");
@@ -118,10 +123,45 @@ st_1a->SetX1NDC(0.58);
 st_1a->SetX2NDC(0.78);
 hist1b->Draw("SAMES");
 
+// Add Legend
+// c1->BuildLegend();
+TLegend *leg1 = new TLegend(0.15,0.15,0.50,0.35,NULL,"brNDC");
+leg1->SetBorderSize(1);
+leg1->SetLineColor(1);
+leg1->SetLineStyle(1);
+leg1->SetLineWidth(1);
+leg1->SetFillColor(0);
+leg1->SetFillStyle(1001);
+
+TLegendEntry *entry1=leg1->AddEntry("1b","2012 MC Bc2JpsiMuNu","lpf");
+entry1->SetFillStyle(1001);
+entry1->SetLineStyle(1);
+entry1->SetLineWidth(1);
+entry1->SetMarkerColor(1);
+entry1->SetMarkerStyle(1);
+entry1->SetMarkerSize(1);
+entry1->SetTextFont(42);
+
+entry1=leg1->AddEntry("1a","2012 Data subset (rescaled)","lpflpf");
+entry1->SetFillStyle(1001);
+entry1->SetLineStyle(1);
+entry1->SetLineWidth(1);
+entry1->SetMarkerColor(1);
+entry1->SetMarkerStyle(1);
+entry1->SetMarkerSize(1);
+entry1->SetTextFont(42);
+leg1->Draw();
+
+c1->Modified();
 c1->SaveAs(filepath+title1+".png");
 
 // Draw in canvas
 TCanvas *c2 = new TCanvas("c2","c2");
+c2->SetLogy();
+c2->SetGridx();
+c2->SetGridy();
+c2->SetTickx(1);
+c2->SetTicky(1);
 c2->SetLogy();// draw with log scale Y
 TString title2 = "q2";
 TString temp2a = "2a";
@@ -141,16 +181,52 @@ hist2a->SetMaximum(max2*10);
 hist2a->SetTitle("");
 hist2a->GetXaxis()->SetTitle(title2);
 hist2a->GetYaxis()->SetTitle("");
+hist2a->SetMinimum(1);
 hist2a->Draw();
 gPad->Update();
 TPaveStats *st_2a = (TPaveStats*)hist2a->FindObject("stats");
 st_2a->SetX1NDC(0.58);
 st_2a->SetX2NDC(0.78);
 hist2b->Draw("SAMES");
+
+// Add Legend
+TLegend *leg2 = new TLegend(0.15,0.15,0.50,0.35,NULL,"brNDC");
+leg2->SetBorderSize(1);
+leg2->SetLineColor(1);
+leg2->SetLineStyle(1);
+leg2->SetLineWidth(1);
+leg2->SetFillColor(0);
+leg2->SetFillStyle(1001);
+
+TLegendEntry *entry2=leg2->AddEntry("2b","2012 MC Bc2JpsiMuNu","lpf");
+entry2->SetFillStyle(1001);
+entry2->SetLineStyle(1);
+entry2->SetLineWidth(1);
+entry2->SetMarkerColor(1);
+entry2->SetMarkerStyle(1);
+entry2->SetMarkerSize(1);
+entry2->SetTextFont(42);
+
+entry2=leg2->AddEntry("2a","2012 Data subset (rescaled)","lpflpf");
+entry2->SetFillStyle(1001);
+entry2->SetLineStyle(1);
+entry2->SetLineWidth(1);
+entry2->SetMarkerColor(1);
+entry2->SetMarkerStyle(1);
+entry2->SetMarkerSize(1);
+entry2->SetTextFont(42);
+leg2->Draw();
+
+c2->Modified();
 c2->SaveAs(filepath+title2+".png");
 
 // Draw in canvas
 TCanvas *c3 = new TCanvas("c3","c3");
+c3->SetLogy();
+c3->SetGridx();
+c3->SetGridy();
+c3->SetTickx(1);
+c3->SetTicky(1);
 c3->SetLogy();// draw with log scale Y
 TString title3 = "El";
 TString temp3a = "3a";
@@ -170,16 +246,52 @@ hist3a->SetMaximum(max3*10);
 hist3a->SetTitle("");
 hist3a->GetXaxis()->SetTitle(title3);
 hist3a->GetYaxis()->SetTitle("");
+hist3a->SetMinimum(1);
 hist3a->Draw();
 gPad->Update();
 TPaveStats *st_3a = (TPaveStats*)hist3a->FindObject("stats");
 st_3a->SetX1NDC(0.58);
 st_3a->SetX2NDC(0.78);
 hist3b->Draw("SAMES");
+
+// Add Legend
+TLegend *leg3 = new TLegend(0.15,0.15,0.50,0.35,NULL,"brNDC");
+leg3->SetBorderSize(1);
+leg3->SetLineColor(1);
+leg3->SetLineStyle(1);
+leg3->SetLineWidth(1);
+leg3->SetFillColor(0);
+leg3->SetFillStyle(1001);
+
+TLegendEntry *entry3=leg3->AddEntry("3b","2012 MC Bc2JpsiMuNu","lpf");
+entry3->SetFillStyle(1001);
+entry3->SetLineStyle(1);
+entry3->SetLineWidth(1);
+entry3->SetMarkerColor(1);
+entry3->SetMarkerStyle(1);
+entry3->SetMarkerSize(1);
+entry3->SetTextFont(42);
+
+entry3=leg3->AddEntry("3a","2012 Data subset (rescaled)","lpflpf");
+entry3->SetFillStyle(1001);
+entry3->SetLineStyle(1);
+entry3->SetLineWidth(1);
+entry3->SetMarkerColor(1);
+entry3->SetMarkerStyle(1);
+entry3->SetMarkerSize(1);
+entry3->SetTextFont(42);
+leg3->Draw();
+
+c3->Modified();
 c3->SaveAs(filepath+title3+".png");
 
 // Draw in canvas
 TCanvas *c4 = new TCanvas("c4","c4");
+c4->SetLogy();
+c4->SetGridx();
+c4->SetGridy();
+c4->SetTickx(1);
+c4->SetTicky(1);
 c4->SetLogy();// draw with log scale Y
 TString title4 = "TAU";
 TString temp4a = "4a";
@@ -199,12 +311,43 @@ hist4a->SetMaximum(max4*10);
 hist4a->SetTitle("");
 hist4a->GetXaxis()->SetTitle(title4);
 hist4a->GetYaxis()->SetTitle("");
+hist4a->SetMinimum(1);
 hist4a->Draw();
 gPad->Update();
 TPaveStats *st_4a = (TPaveStats*)hist4a->FindObject("stats");
 st_4a->SetX1NDC(0.58);
 st_4a->SetX2NDC(0.78);
 hist4b->Draw("SAMES");
+
+// Add Legend
+TLegend *leg4 = new TLegend(0.15,0.15,0.50,0.35,NULL,"brNDC");
+leg4->SetBorderSize(1);
+leg4->SetLineColor(1);
+leg4->SetLineStyle(1);
+leg4->SetLineWidth(1);
+leg4->SetFillColor(0);
+leg4->SetFillStyle(1001);
+
+TLegendEntry *entry4=leg4->AddEntry("4b","2012 MC Bc2JpsiMuNu","lpf");
+entry4->SetFillStyle(1001);
+entry4->SetLineStyle(1);
+entry4->SetLineWidth(1);
+entry4->SetMarkerColor(1);
+entry4->SetMarkerStyle(1);
+entry4->SetMarkerSize(1);
+entry4->SetTextFont(42);
+
+entry4=leg4->AddEntry("4a","2012 Data subset (rescaled)","lpflpf");
+entry4->SetFillStyle(1001);
+entry4->SetLineStyle(1);
+entry4->SetLineWidth(1);
+entry4->SetMarkerColor(1);
+entry4->SetMarkerStyle(1);
+entry4->SetMarkerSize(1);
+entry4->SetTextFont(42);
+leg4->Draw();
+
+c4->Modified();
 c4->SaveAs(filepath+title4+".png");
 
 }
