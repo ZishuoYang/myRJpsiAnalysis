@@ -8,13 +8,19 @@
 void project_compare_histograms()
 {
 // Set output filepath
-TString filepath = "./plots/projection_for_MC/";
+TString filepath = "./plots/projection_for_MC/more_modes/";
 
 // Get input
 TFile *inputFile1 = new TFile("~/my_eos/RJpsi/tuples/2012_Data_MD_subset.root");
 TFile *inputFile2 = new TFile("~/my_eos/RJpsi/tuples/2012_MC_JpsiMuNu.root");
+TFile *inputFile3 = new TFile("~/my_eos/RJpsi/tuples/2012_MC_JpsiTauNu.root");
+TFile *inputFile4 = new TFile("~/my_eos/RJpsi/tuples/2012_MC_Psi2SMu.root");
+TFile *inputFile5 = new TFile("~/my_eos/RJpsi/tuples/2012_MC_JpsiDx.root");
 TTree *myTree1 = (TTree*) inputFile1->Get("DecayTree");
 TTree *myTree2 = (TTree*) inputFile2->Get("DecayTree");
+TTree *myTree3 = (TTree*) inputFile3->Get("DecayTree");
+TTree *myTree4 = (TTree*) inputFile4->Get("DecayTree");
+TTree *myTree5 = (TTree*) inputFile5->Get("DecayTree");
 
 // // Read tree and fill histogram
 // TCanvas *c_z = new TCanvas("c_z","c_z");
@@ -100,17 +106,29 @@ c1->SetTicky(1);
 TString title1 = "MissingMass2";
 TString temp1a = "1a";
 TString temp1b = "1b";
+TString temp1c = "1c";
+TString temp1d = "1d";
+TString temp1e = "1e";
 TString approxSelection = "Jpsi_L0DiMuonDecision_TOS==1 && Jpsi_Hlt2DiMuonDetachedJPsiDecision_TOS==1 && BachMu_IPCHI2_OWNPV>4.8 && BachMu_PT>750 && Bc_OWNPV_CHI2<25 && Bc_DOCA<0.15 && Bc_ISOLATION_BDT<0.2 && BachMu_ProbNNmu>0.5"; // cuts to quickly approx. sig/norm selection
 
 myTree1->Draw("FitVar_Mmiss2>>"+temp1a+"(25,-5e6,10e6)","BachMu_PIDmu<4","goff");
 TH1F *hist1a = (TH1F*)gDirectory->Get(temp1a);
 myTree2->Draw("FitVar_Mmiss2>>"+temp1b+"(25,-5e6,10e6)", approxSelection, "goff");
 TH1F *hist1b = (TH1F*)gDirectory->Get(temp1b);
+myTree3->Draw("FitVar_Mmiss2>>"+temp1c+"(25,-5e6,10e6)", approxSelection, "goff");
+TH1F *hist1c = (TH1F*)gDirectory->Get(temp1c);
+myTree4->Draw("FitVar_Mmiss2>>"+temp1d+"(25,-5e6,10e6)", approxSelection, "goff");
+TH1F *hist1d = (TH1F*)gDirectory->Get(temp1d);
+myTree5->Draw("FitVar_Mmiss2>>"+temp1e+"(25,-5e6,10e6)", approxSelection, "goff");
+TH1F *hist1e = (TH1F*)gDirectory->Get(temp1e);
 Double_t scale1 = (hist1b->Integral() / hist1a->Integral());
 hist1a->Scale(scale1,"nosw2");
 
 hist1a->SetLineColor(kRed);
 hist1b->SetLineColor(kBlue);
+hist1c->SetLineColor(kViolet);
+hist1d->SetLineColor(kTeal);
+hist1e->SetLineColor(kYellow);
 auto max1 = std::max(hist1a->GetMaximum(),hist1b->GetMaximum());
 hist1a->SetMaximum(max1*10);
 hist1a->SetTitle("");
@@ -123,6 +141,9 @@ TPaveStats *st_1a = (TPaveStats*)hist1a->FindObject("stats");
 st_1a->SetX1NDC(0.58);
 st_1a->SetX2NDC(0.78);
 hist1b->Draw("SAMES");
+hist1c->Draw("SAME");
+hist1d->Draw("SAME");
+hist1e->Draw("SAME");
 
 // Add Legend
 // c1->BuildLegend();
@@ -134,7 +155,34 @@ leg1->SetLineWidth(1);
 leg1->SetFillColor(0);
 leg1->SetFillStyle(1001);
 
-TLegendEntry *entry1=leg1->AddEntry("1b","2012 MC Bc2JpsiMuNu","lpf");
+TLegendEntry *entry1=leg1->AddEntry("1b","2012 MC Bc->JpsiMuNu","lpf");
+entry1->SetFillStyle(1001);
+entry1->SetLineStyle(1);
+entry1->SetLineWidth(1);
+entry1->SetMarkerColor(1);
+entry1->SetMarkerStyle(1);
+entry1->SetMarkerSize(1);
+entry1->SetTextFont(42);
+
+entry1=leg1->AddEntry("1c","2012 MC Bc->JpsiTauNu","lpflpf");
+entry1->SetFillStyle(1001);
+entry1->SetLineStyle(1);
+entry1->SetLineWidth(1);
+entry1->SetMarkerColor(1);
+entry1->SetMarkerStyle(1);
+entry1->SetMarkerSize(1);
+entry1->SetTextFont(42);
+
+entry1=leg1->AddEntry("1d","2012 MC Bc->Psi2SMuNu","lpflpf");
+entry1->SetFillStyle(1001);
+entry1->SetLineStyle(1);
+entry1->SetLineWidth(1);
+entry1->SetMarkerColor(1);
+entry1->SetMarkerStyle(1);
+entry1->SetMarkerSize(1);
+entry1->SetTextFont(42);
+
+entry1=leg1->AddEntry("1e","2012 MC Bc->JpsiDx","lpflpf");
 entry1->SetFillStyle(1001);
 entry1->SetLineStyle(1);
 entry1->SetLineWidth(1);
