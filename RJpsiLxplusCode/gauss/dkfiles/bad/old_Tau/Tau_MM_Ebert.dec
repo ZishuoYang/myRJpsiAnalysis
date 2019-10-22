@@ -1,0 +1,32 @@
+# EventType: 4020000x
+# Descriptor: [B_c+ -> (J/psi(1S) -> mu+ mu-) (tau+ -> mu+ nu_mu nu_tau~) nu_tau]cc
+# Production: BcVegPy
+# Documentation: Ebert form factor [PhysRevD.68.094020]
+# EndDocumentation
+#
+# Responsible: Jack Wimberley
+# Email: jwimberl@cern.ch
+# Date: 20130517
+#
+Alias         MyTau-   tau-
+Alias         MyTau+   tau+
+ChargeConj    MyTau- MyTau+
+
+Alias      MyJ/psi  J/psi
+ChargeConj MyJ/psi  MyJ/psi
+#
+Decay B_c+sig
+  1.000       MyJ/psi   MyTau+  nu_tau PHOTOS BC_VMN 2;
+Enddecay
+CDecay B_c-sig
+#
+Decay MyJ/psi
+  1.000         mu+       mu-           PHOTOS VLL;
+Enddecay
+#
+Decay MyTau-
+ 1.00      mu-   anti-nu_mu    nu_tau   TAULNUNU;
+Enddecay
+CDecay MyTau+
+#   
+End

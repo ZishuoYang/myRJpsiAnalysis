@@ -1,0 +1,19 @@
+# content of the file BDecayFile.dec
+Alias      MyJ/psi  J/psi
+ChargeConj MyJ/psi  MyJ/psi
+Alias      MyKs     K_S0
+ChargeConj MyKs     MyKs
+#
+Decay B0
+  1.000         MyJ/psi   MyKs           SVS;
+Enddecay
+CDecay anti-B0
+#
+Decay MyKs
+  1.000         pi+       pi-            PHSP;
+Enddecay
+#
+Decay MyJ/psi
+  1.000         mu+       mu-           VLL;
+Enddecay
+End

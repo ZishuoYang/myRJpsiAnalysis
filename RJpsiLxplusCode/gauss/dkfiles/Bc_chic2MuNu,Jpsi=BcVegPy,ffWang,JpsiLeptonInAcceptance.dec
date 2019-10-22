@@ -1,0 +1,48 @@
+# EventType: 14845009
+#
+# Descriptor: [B_c+ => (chi_c2(1P) --> (J/psi(1S) => mu+ mu-) ...) mu+ nu_mu]CC
+#
+# NickName: Bc_chic2MuNu,Jpsi=BcVegPy,ffWang,JpsiLeptonInAcceptance
+#
+# Production: BcVegPy
+# Cuts: BcDaughtersInLHCb
+# CutsOptions: ChargedThetaMin 0. ChargedThetaMax 10. NeutralThetaMin 0. NeutralThetaMax 10.
+# FullEventCuts: JpsiLeptonInAcceptance
+#
+# InsertPythonCode:
+#from Configurables import JpsiLeptonInAcceptance
+#Generation().addTool( JpsiLeptonInAcceptance )
+#Generation().JpsiLeptonInAcceptance.JpsiLepPMin = 0
+#Generation().JpsiLeptonInAcceptance.BachLepPMin = 0
+#Generation().JpsiLeptonInAcceptance.PreselMass = False
+#Generation().JpsiLeptonInAcceptance.PreselDoca = False
+# EndInsertPythonCode
+#
+# Documentation: Bc+ to Chi_c2(1P) mu, Chi_c2(1P) -> (Jpsi -> mumu) gamma. Form factor model by Wang et al
+# EndDocumentation
+#
+# PhysicsWG: B2SL
+# Tested: Yes
+# Responsible: Jack Wimberley
+# Email: jack.wimberley@cern.ch
+# Date: 20140109
+#
+Alias MyJ/psi J/psi
+ChargeConj MyJ/psi MyJ/psi
+Alias MyChiC2 chi_c2
+ChargeConj MyChiC2 MyChiC2
+#
+Decay B_c+
+  1.00000  MyChiC2    mu+            nu_mu              PHOTOS BC_TMN 3;
+Enddecay
+CDecay B_c-
+#
+Decay MyChiC2
+  1.00000 gamma MyJ/psi                                   TVP;
+Enddecay
+#
+Decay MyJ/psi
+  1.00000  mu+         mu-                              PHOTOS VLL;
+Enddecay
+#
+End

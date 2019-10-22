@@ -1,0 +1,23 @@
+Alias MyJ/psi J/psi
+ChargeConj MyJ/psi MyJ/psi
+Alias MyChiC1 chi_c1
+ChargeConj MyChiC1 MyChiC1
+#
+Decay B_c+
+  1.00000  MyChiC1    mu+            nu_mu              PHOTOS BC_VMN 3;
+Enddecay
+CDecay B_c-
+#
+Decay MyChiC1
+  1.00000 MyJ/psi   gamma                                   VVP 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0; #[Reconstructed PDG2011]
+Enddecay
+#
+Decay MyJ/psi
+  1.00000 mu+ mu- VLL;
+Enddecay
+#
+End
+
+
+
+

@@ -1,0 +1,32 @@
+# EventType: 3000000
+# Descriptor: [B_c+ -> (psi2S(1S) -> mu+ mu- {,gamma} {,gamma}) mu+ nu_mu]cc
+# Production: BcVegPy
+# Documentation: Phase Space form factor
+# EndDocumentation
+#
+# Responsible: Jack Wimberley
+# Email: jwimberl@cern.ch
+# Date: 20130517
+#
+Alias      Mypsi2S  psi2S
+ChargeConj Mypsi2S  Mypsi2S
+
+Alias      MyJ/psi  J/psi
+ChargeConj MyJ/psi  MyJ/psi
+#
+Decay B_c+sig
+  1.000         Mypsi2S   mu+   nu_mu          PHOTOS BC_VMN 1;
+Enddecay
+CDecay B_c-sig
+#
+Decay Mypsi2S
+  0.336         MyJ/psi   pi+       pi-            PHOTOS VLL;
+  0.1775        MyJ/psi   pi0       pi0            PHOTOS VLL;
+  0.4865        MyJ/psi   eta                      PHOTOS VLL;
+Enddecay
+#
+Decay MyJ/psi
+  1.000         mu+       mu-            PHOTOS VLL;
+Enddecay
+#
+End
