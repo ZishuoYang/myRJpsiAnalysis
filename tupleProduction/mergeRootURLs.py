@@ -6,7 +6,7 @@ import ROOT
 import sys
 
 targetDir = "/eos/user/z/ziyang/RJpsi/tuples/"
-targetFileName = "2012_MC_Psi2SMu"
+targetFileName = "2012_Data_MD_subset.root"
 sourceTreeName = "JpsiRecTuple/DecayTree"
 
 fname = str(sys.argv[1])
@@ -22,7 +22,7 @@ if len(sys.argv) == 3: # For combining MagUp and MagDown
     print("content: ", len(content))
 
 # Divide up the input URL files 
-numInputFiles = 100
+numInputFiles = 200
 numLast = len(content)%numInputFiles
 if numLast == 0:
     numOutputFiles = int(len(content)/numInputFiles)
