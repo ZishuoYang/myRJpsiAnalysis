@@ -29,8 +29,8 @@ DaVinci().Simulation = simulation
 ### MC BC -> JPSI TAU NU TRUTH TUPLE ###
 #######################################
 
-#from MCTuples import MCBc2JpsiTauNuTuple
-#DaVinci().appendToMainSequence( [ MCBc2JpsiTauNuTuple ] )
+from MCTuples import MCBc2JpsiTauNuTuple
+DaVinci().appendToMainSequence( [ MCBc2JpsiTauNuTuple ] )
 
 ##############################
 ### RECONSTRUCTED SEQUENCE ###
@@ -100,4 +100,4 @@ RecSeq.Members += [ tuple ]
 #######################
 
 DaVinci().appendToMainSequence( [ RecSeq ] ) 
-DaVinci().DataType = '2012'
+DaVinci().DataType = '2016'
