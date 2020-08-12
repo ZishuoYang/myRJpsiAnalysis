@@ -13,7 +13,8 @@ from Configurables import DaVinci
 
 MessageSvc().OutputLevel = INFO
 
-DaVinci().PrintFreq = 100
+DaVinci().PrintFreq = 1000
+DaVinci().DataType = '2016'
 DaVinci().HistogramFile = "Bc_BKG_MC_histos.root"
 DaVinci().TupleFile = "Bc_BKG_MC.root"
 
