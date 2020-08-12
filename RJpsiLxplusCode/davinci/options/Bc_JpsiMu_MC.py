@@ -24,14 +24,14 @@ DaVinci().TupleFile = "Bc_JpsiMu_MC.root"
 
 simulation = True # Data or MC
 DaVinci().Simulation = simulation
-DaVinci().DataType = '2012'
+DaVinci().DataType = '2016'
 
 #######################################
 ### MC BC -> JPSI MU NU TRUTH TUPLE ###
 #######################################
 
-#from MCTuples import MCBc2JpsiMuNuTuple
-#DaVinci().appendToMainSequence( [ MCBc2JpsiMuNuTuple ] )
+from MCTuples import MCBc2JpsiMuNuTuple
+DaVinci().appendToMainSequence( [ MCBc2JpsiMuNuTuple ] )
 
 ##############################
 ### RECONSTRUCTED SEQUENCE ###
