@@ -187,7 +187,7 @@ void HistFactJpsi_control() {
   if(BBon3d) sigtau.ActivateStatError();
   sigtau.SetNormalizeByTheory(kFALSE);
   sigtau.AddNormFactor("Nmu",expMu,1e-6,1e3);
-  sigtau.AddNormFactor("RawRJpsi",expTau,1e-6,0.2);
+  sigtau.AddNormFactor("RawRJpsi",expTau,1e-6,0.1);
   sigtau.AddNormFactor("mcNorm_sigtau", mcN_sigtau, 1e-9, 1.);
   chan.AddSample(sigtau);
   
@@ -333,7 +333,7 @@ void HistFactJpsi_control() {
   
 
 /* FIX SOME MODEL PARAMS */
-  for(int i =0; i < 3; i++){
+  for(int i =0; i < 9; i++){
     if (((RooRealVar*)(mc->GetNuisanceParameters()->find("mcNorm_"+mchistos[i])))!=NULL)
     {
       ((RooRealVar*)(mc->GetNuisanceParameters()->find("mcNorm_"+mchistos[i])))->setConstant(kTRUE);
@@ -345,7 +345,9 @@ void HistFactJpsi_control() {
 ///  ((RooRealVar*)(mc->GetNuisanceParameters()->find("NDstst0")))->setConstant(kTRUE);
 ///  ((RooRealVar*)(mc->GetNuisanceParameters()->find("fD1")))->setConstant(kTRUE);
 ///  ((RooRealVar*)(mc->GetNuisanceParameters()->find("NmisID")))->setConstant(kTRUE);
+     ((RooRealVar*)(mc->GetNuisanceParameters()->find("mcNorm_misID")))->setConstant(kTRUE);
      ((RooRealVar*)(mc->GetNuisanceParameters()->find("NfakeJpsi")))->setConstant(kTRUE);
+     ((RooRealVar*)(mc->GetNuisanceParameters()->find("Lumi")))->setConstant(kTRUE);
 
 ///  if(useDststShapeUncerts) ((RooRealVar*)(mc->GetNuisanceParameters()->find("alpha_IW")))->setRange(-3.0,3.0);  
 ///  if(useMuShapeUncerts) ((RooRealVar*)(mc->GetNuisanceParameters()->find("alpha_v1mu")))->setRange(-8,8);
@@ -936,4 +938,3 @@ if(result != NULL)
     cerr << data->sumEntries() << '\t' << model_hf->expectedEvents(RooArgSet(*x,*y,*z,*idx)) << endl;
 
  }
-
