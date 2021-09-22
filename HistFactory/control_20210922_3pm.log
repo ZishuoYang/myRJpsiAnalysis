@@ -1,0 +1,1878 @@
+
+Processing HistFactJpsi_control.C...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+24600
+mcN_sigmu = 2435
+mcN_sigtau = 86
+mcN_Psi2SMu = 310
+mcN_JpsiD = 273
+mcN_JpsiDq2 = 281
+mcN_JpsiDK = 858
+mcN_misID_2016 = 47226
+mcN_fakeJpsi = 2
+mcN_Bd2JpsiX = 3168
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_data_subset
+Opened input file: Histos_20210920.root: 0x5579e13b1b40
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_sigmu
+Opened input file: Histos_20210920.root: 0x5579e13ae640
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_sigtau
+Opened input file: Histos_20210920.root: 0x5579e12bb9b0
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_Psi2SMu
+Opened input file: Histos_20210920.root: 0x5579e13070c0
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_JpsiD
+Opened input file: Histos_20210920.root: 0x5579e130a4e0
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_JpsiDq2
+Opened input file: Histos_20210920.root: 0x5579e12c0d20
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_JpsiDK
+Opened input file: Histos_20210920.root: 0x5579e1220050
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_Bd2JpsiX
+Opened input file: Histos_20210920.root: 0x5579e1419b90
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_misID_2016
+Opened input file: Histos_20210920.root: 0x5579e12ec810
+Collecting Nominal Histogram
+Getting histogram.  InputFile Histos_20210920.root HistoPath  HistoName h_fakeJpsi
+Opened input file: Histos_20210920.root: 0x5579e12f03f0
+Making Model and Measurements (Fast) for measurement: my_measurement
+using lumi = 0.0377 and lumiError = 0.0001885 including bins between 0 and 1
+fixing the following parameters:
+Checking if output directory : results -  exists
+Creating the output file: results/jpsi_my_measurement.root
+Creating the table file: results/jpsi_results.table
+Creating the HistoToWorkspaceFactoryFast factory
+Setting preprocess functions
+Starting to process channel: Jpsimu_kinematic
+
+
+-------------------
+Starting to process Jpsimu_kinematic channel with 3 observables
+lumi str = [0.0377,0,0.377]
+lumi Error str = nominalLumi[0.0377,0,0.039585],0.0001885
+making normFactor: Nmu
+making normFactor: mcNorm_sigmu
+h_sigmu_Jpsimu_kinematic has no variation histograms 
+processing hist h_sigmu
+making normFactor: RawRJpsi
+making normFactor: mcNorm_sigtau
+h_sigtau_Jpsimu_kinematic has no variation histograms 
+processing hist h_sigtau
+making normFactor: mcNorm_Psi2SMu
+making normFactor: NPsi2Mu
+h_Psi2SMu_Jpsimu_kinematic has no variation histograms 
+processing hist h_Psi2SMu
+making normFactor: mcNorm_JpsiD
+making normFactor: NJpsiD
+h_JpsiD_Jpsimu_kinematic has no variation histograms 
+processing hist h_JpsiD
+making normFactor: mcNorm_JpsiDq2
+making normFactor: NJpsiDq2
+h_JpsiDq2_Jpsimu_kinematic has no variation histograms 
+processing hist h_JpsiDq2
+making normFactor: mcNorm_JpsiDK
+making normFactor: NJpsiDK
+h_JpsiDK_Jpsimu_kinematic has no variation histograms 
+processing hist h_JpsiDK
+making normFactor: mcNorm_Bd2JpsiX
+making normFactor: NBd2JpsiX
+h_Bd2JpsiX_Jpsimu_kinematic has no variation histograms 
+processing hist h_Bd2JpsiX
+making normFactor: mcNorm_misID
+making normFactor: NmisID
+h_misID_2016_Jpsimu_kinematic has no variation histograms 
+processing hist h_misID_2016
+making normFactor: mcNorm_fakeJpsi
+WARNING: Const attribute to <NormFactor> tag is deprecated, will ignore. Instead, add 
+	<ParamSetting Const="True">mcNorm_fakeJpsi</ParamSetting>
+ to your top-level XML's <Measurment> entry
+making normFactor: NfakeJpsi
+WARNING: Const attribute to <NormFactor> tag is deprecated, will ignore. Instead, add 
+	<ParamSetting Const="True">NfakeJpsi</ParamSetting>
+ to your top-level XML's <Measurment> entry
+h_fakeJpsi_Jpsimu_kinematic has no variation histograms 
+processing hist h_fakeJpsi
+-----------------------------------------
+import model into workspace
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+RooDataSet::AsimovData[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic,weight:binWeightAsimov] = 390 entries (58.1349 weighted)
+
+RooWorkspace(Jpsimu_kinematic) Jpsimu_kinematic workspace contents
+
+variables
+---------
+(Lumi,NBd2JpsiX,NJpsiD,NJpsiDK,NJpsiDq2,NPsi2Mu,NfakeJpsi,NmisID,Nmu,RawRJpsi,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_0,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_1,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_2,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_3,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_4,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_5,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_6,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_7,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_8,mcNorm_Bd2JpsiX,mcNorm_JpsiD,mcNorm_JpsiDK,mcNorm_JpsiDq2,mcNorm_Psi2SMu,mcNorm_fakeJpsi,mcNorm_misID,mcNorm_sigmu,mcNorm_sigtau,nominalLumi,obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic,weightVar)
+
+p.d.f.s
+-------
+RooRealSumPdf::Jpsimu_kinematic_model[ binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_0 * L_x_h_sigmu_Jpsimu_kinematic_overallSyst_x_Exp + binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_1 * L_x_h_sigtau_Jpsimu_kinematic_overallSyst_x_Exp + binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_2 * L_x_h_Psi2SMu_Jpsimu_kinematic_overallSyst_x_Exp + binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_3 * L_x_h_JpsiD_Jpsimu_kinematic_overallSyst_x_Exp + binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_4 * L_x_h_JpsiDq2_Jpsimu_kinematic_overallSyst_x_Exp + binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_5 * L_x_h_JpsiDK_Jpsimu_kinematic_overallSyst_x_Exp + binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_6 * L_x_h_Bd2JpsiX_Jpsimu_kinematic_overallSyst_x_Exp + binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_7 * L_x_h_misID_2016_Jpsimu_kinematic_overallSyst_x_Exp + binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_8 * L_x_h_fakeJpsi_Jpsimu_kinematic_overallSyst_x_Exp ] = 0/58.1349
+RooGaussian::lumiConstraint[ x=Lumi mean=nominalLumi sigma=0.0001885 ] = 1
+RooProdPdf::model_Jpsimu_kinematic[ lumiConstraint * Jpsimu_kinematic_model(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+
+functions
+--------
+RooProduct::L_x_h_Bd2JpsiX_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_Bd2JpsiX_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooProduct::L_x_h_JpsiDK_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_JpsiDK_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooProduct::L_x_h_JpsiD_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_JpsiD_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooProduct::L_x_h_JpsiDq2_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_JpsiDq2_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooProduct::L_x_h_Psi2SMu_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_Psi2SMu_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooProduct::L_x_h_fakeJpsi_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_fakeJpsi_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooProduct::L_x_h_misID_2016_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_misID_2016_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooProduct::L_x_h_sigmu_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_sigmu_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooProduct::L_x_h_sigtau_Jpsimu_kinematic_overallSyst_x_Exp[ 0.0377 * h_sigtau_Jpsimu_kinematic_overallSyst_x_Exp ] = 0
+RooHistFunc::h_Bd2JpsiX_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_Bd2JpsiX_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ mcNorm_Bd2JpsiX * NBd2JpsiX * h_Bd2JpsiX_Jpsimu_kinematic_epsilon ] = 0.0236743
+RooProduct::h_Bd2JpsiX_Jpsimu_kinematic_overallSyst_x_Exp[ h_Bd2JpsiX_Jpsimu_kinematic_nominal * h_Bd2JpsiX_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+RooHistFunc::h_JpsiDK_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_JpsiDK_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ mcNorm_JpsiDK * NJpsiDK * h_JpsiDK_Jpsimu_kinematic_epsilon ] = 0.262238
+RooProduct::h_JpsiDK_Jpsimu_kinematic_overallSyst_x_Exp[ h_JpsiDK_Jpsimu_kinematic_nominal * h_JpsiDK_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+RooHistFunc::h_JpsiD_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_JpsiD_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ mcNorm_JpsiD * NJpsiD * h_JpsiD_Jpsimu_kinematic_epsilon ] = 0.274725
+RooProduct::h_JpsiD_Jpsimu_kinematic_overallSyst_x_Exp[ h_JpsiD_Jpsimu_kinematic_nominal * h_JpsiD_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+RooHistFunc::h_JpsiDq2_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_JpsiDq2_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ mcNorm_JpsiDq2 * NJpsiDq2 * h_JpsiDq2_Jpsimu_kinematic_epsilon ] = 0.266904
+RooProduct::h_JpsiDq2_Jpsimu_kinematic_overallSyst_x_Exp[ h_JpsiDq2_Jpsimu_kinematic_nominal * h_JpsiDq2_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+RooHistFunc::h_Psi2SMu_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_Psi2SMu_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ mcNorm_Psi2SMu * NPsi2Mu * h_Psi2SMu_Jpsimu_kinematic_epsilon ] = 0.0241936
+RooProduct::h_Psi2SMu_Jpsimu_kinematic_overallSyst_x_Exp[ h_Psi2SMu_Jpsimu_kinematic_nominal * h_Psi2SMu_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+RooHistFunc::h_fakeJpsi_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_fakeJpsi_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ mcNorm_fakeJpsi * NfakeJpsi * h_fakeJpsi_Jpsimu_kinematic_epsilon ] = 7.5
+RooProduct::h_fakeJpsi_Jpsimu_kinematic_overallSyst_x_Exp[ h_fakeJpsi_Jpsimu_kinematic_nominal * h_fakeJpsi_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+RooHistFunc::h_misID_2016_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_misID_2016_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ mcNorm_misID * NmisID * h_misID_2016_Jpsimu_kinematic_epsilon ] = 0.0193749
+RooProduct::h_misID_2016_Jpsimu_kinematic_overallSyst_x_Exp[ h_misID_2016_Jpsimu_kinematic_nominal * h_misID_2016_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+RooHistFunc::h_sigmu_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_sigmu_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ Nmu * mcNorm_sigmu * h_sigmu_Jpsimu_kinematic_epsilon ] = 0.0616017
+RooProduct::h_sigmu_Jpsimu_kinematic_overallSyst_x_Exp[ h_sigmu_Jpsimu_kinematic_nominal * h_sigmu_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+RooHistFunc::h_sigtau_Jpsimu_kinematic_nominal[ depList=(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic) ] = 0
+RooProduct::h_sigtau_Jpsimu_kinematic_overallNorm_x_sigma_epsilon[ Nmu * RawRJpsi * mcNorm_sigtau * h_sigtau_Jpsimu_kinematic_epsilon ] = 0.0527637
+RooProduct::h_sigtau_Jpsimu_kinematic_overallSyst_x_Exp[ h_sigtau_Jpsimu_kinematic_nominal * h_sigtau_Jpsimu_kinematic_overallNorm_x_sigma_epsilon ] = 0
+
+datasets
+--------
+RooDataSet::asimovData(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataSet::obsData(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::h_sigmu_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataHist::h_sigtau_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataHist::h_Psi2SMu_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataHist::h_JpsiD_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataHist::h_JpsiDq2_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataHist::h_JpsiDK_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataHist::h_Bd2JpsiX_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataHist::h_misID_2016_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+RooDataHist::h_fakeJpsi_Jpsimu_kinematicnominalDHist(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+
+named sets
+----------
+ModelConfig_GlobalObservables:(nominalLumi)
+ModelConfig_Observables:(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+coefList:(binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_0,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_1,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_2,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_3,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_4,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_5,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_6,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_7,binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_8)
+constraintTerms:(lumiConstraint)
+globalObservables:(nominalLumi)
+likelihoodTerms:(Jpsimu_kinematic_model)
+obsAndWeight:(weightVar,obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+observables:(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+observablesSet:(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+shapeList:(L_x_h_sigmu_Jpsimu_kinematic_overallSyst_x_Exp,L_x_h_sigtau_Jpsimu_kinematic_overallSyst_x_Exp,L_x_h_Psi2SMu_Jpsimu_kinematic_overallSyst_x_Exp,L_x_h_JpsiD_Jpsimu_kinematic_overallSyst_x_Exp,L_x_h_JpsiDq2_Jpsimu_kinematic_overallSyst_x_Exp,L_x_h_JpsiDK_Jpsimu_kinematic_overallSyst_x_Exp,L_x_h_Bd2JpsiX_Jpsimu_kinematic_overallSyst_x_Exp,L_x_h_misID_2016_Jpsimu_kinematic_overallSyst_x_Exp,L_x_h_fakeJpsi_Jpsimu_kinematic_overallSyst_x_Exp)
+
+generic objects
+---------------
+RooStats::ModelConfig::ModelConfig
+
+embedded precalculated expensive components
+-------------------------------------------
+uid = 6 key=h_Bd2JpsiX_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::836352000.000000
+uid = 5 key=h_JpsiDK_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::226512000.000000
+uid = 3 key=h_JpsiD_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::72072000.000000
+uid = 4 key=h_JpsiDq2_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::74184000.000000
+uid = 2 key=h_Psi2SMu_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::81840000.000000
+uid = 8 key=h_fakeJpsi_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::528000.000000
+uid = 7 key=h_misID_2016_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::12467664000.000002
+uid = 0 key=h_sigmu_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::642840000.000000
+uid = 1 key=h_sigtau_Jpsimu_kinematic_nominal_Int[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic] value=RooDouble::22704000.000000
+Setting Parameter(s) of Interest as: RawRJpsi 
+Opening File to hold channel: results/jpsi_Jpsimu_kinematic_my_measurement_model.root
+About to write channel measurement to file
+Writing sample: h_sigmu
+Writing sample: h_sigtau
+Writing sample: h_Psi2SMu
+Writing sample: h_JpsiD
+Writing sample: h_JpsiDq2
+Writing sample: h_JpsiDK
+Writing sample: h_Bd2JpsiX
+Writing sample: h_misID_2016
+Writing sample: h_fakeJpsi
+Saved all histograms
+Saved Measurement
+Successfully wrote channel to file
+full list of observables:
+RooArgList:: = (obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+
+
+------------------
+ Entering combination
+-----------------------------------------
+create toy data for Jpsimu_kinematic
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+WARNING::Detected a bin with zero expected events- skip it
+RooDataSet::AsimovData0[obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic,channelCat,weight:binWeightAsimov] = 390 entries (58.1349 weighted)
+Merging data for channel Jpsimu_kinematic
+
+RooWorkspace(combined) combined contents
+
+variables
+---------
+(channelCat,nominalLumi,obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic,weightVar)
+
+datasets
+--------
+RooDataSet::asimovData(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic,weightVar,channelCat)
+RooDataSet::obsData(channelCat,obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic)
+
+named sets
+----------
+ModelConfig_GlobalObservables:(nominalLumi)
+ModelConfig_Observables:(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic,weightVar,channelCat)
+globalObservables:(nominalLumi)
+observables:(obs_x_Jpsimu_kinematic,obs_y_Jpsimu_kinematic,obs_z_Jpsimu_kinematic,weightVar,channelCat)
+
+
+
+----------------
+ Importing combined model
+Setting Parameter(s) of Interest as: RawRJpsi 
+Writing combined workspace to file: results/jpsi_combined_my_measurement_model.root
+Writing combined measurement to file: results/jpsi_combined_my_measurement_model.root
+Writing sample: h_sigmu
+Writing sample: h_sigtau
+Writing sample: h_Psi2SMu
+Writing sample: h_JpsiD
+Writing sample: h_JpsiDq2
+Writing sample: h_JpsiDK
+Writing sample: h_Bd2JpsiX
+Writing sample: h_misID_2016
+Writing sample: h_fakeJpsi
+Saved all histograms
+Saved Measurement
+Param of Interest: RawRJpsi
+mcNorm_sigmu = 0.000410678
+mcNorm_sigtau = 0.0116279
+mcNorm_Psi2SMu = 0.00322581
+mcNorm_JpsiD = 0.003663
+mcNorm_JpsiDq2 = 0.00355872
+mcNorm_JpsiDK = 0.0011655
+mcNorm_fakeJpsi = 0.5
+mcNorm_Bd2JpsiX = 0.000315657
+DEBUG MESSAGE: USING BRIAN'S PATCH
+DEBUG MESSAGE: LOOPING OVER 1000 BINS
+DEBUG MESSAGE: DONE!
+  1) RooRealVar::                                                                            Lumi = 0.0377
+  2) RooRealVar::                                                                       NBd2JpsiX = 75
+  3) RooRealVar::                                                                          NJpsiD = 75
+  4) RooRealVar::                                                                         NJpsiDK = 225
+  5) RooRealVar::                                                                        NJpsiDq2 = 75
+  6) RooRealVar::                                                                         NPsi2Mu = 7.5
+  7) RooRealVar::                                                                       NfakeJpsi = 15
+  8) RooRealVar::                                                                          NmisID = 915
+  9) RooRealVar::                                                                             Nmu = 150
+ 10) RooRealVar::                                                                        RawRJpsi = 0.0302512
+ 11) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_0 = 3.78788e-06
+ 12) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_1 = 3.78788e-06
+ 13) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_2 = 3.78788e-06
+ 14) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_3 = 3.78788e-06
+ 15) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_4 = 3.78788e-06
+ 16) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_5 = 3.78788e-06
+ 17) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_6 = 3.78788e-06
+ 18) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_7 = 3.78788e-06
+ 19) RooRealVar:: binWidth_obs_x_Jpsimu_kinematic_obs_y_Jpsimu_kinematic_obs_z_Jpsimu_kinematic_8 = 3.78788e-06
+ 20) RooRealVar::                                                                 mcNorm_Bd2JpsiX = 0.000315657
+ 21) RooRealVar::                                                                    mcNorm_JpsiD = 0.003663
+ 22) RooRealVar::                                                                   mcNorm_JpsiDK = 0.0011655
+ 23) RooRealVar::                                                                  mcNorm_JpsiDq2 = 0.00355872
+ 24) RooRealVar::                                                                  mcNorm_Psi2SMu = 0.00322581
+ 25) RooRealVar::                                                                 mcNorm_fakeJpsi = 0.5
+ 26) RooRealVar::                                                                    mcNorm_misID = 2.11748e-05
+ 27) RooRealVar::                                                                    mcNorm_sigmu = 0.000410678
+ 28) RooRealVar::                                                                   mcNorm_sigtau = 0.0116279
+ 29) RooRealVar::                                                                     nominalLumi = 0.0377
+**********************************************************************
+ **********
+ **    9 **SET ERR         0.5
+ **********
+Minimizing the Minuit (Migrad)
+ **********
+ **   10 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+ **********
+ **   15 **HESSE        4000
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM HESSE     STATUS=FAILED          7 CALLS           8 TOTAL
+                     EDM= unknown      STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE     INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  NBd2JpsiX    1.01126e+01   6.69399e+01   2.16811e-01  -7.75398e-01
+   2  NJpsiD       7.50000e+01   2.73585e+01   1.47160e-01  -1.01599e+00
+   3  NJpsiDK      2.25000e+02   8.19336e+01   1.83870e-01  -8.86715e-01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01   1.47160e-01  -1.01599e+00
+   5  NPsi2Mu      7.50000e+00   2.74334e+00   6.38571e-02  -1.32523e+00
+   6  NmisID       9.15000e+02   1.41926e+02   2.02131e-01  -8.51027e-02
+   7  Nmu          1.50000e+02   5.45278e+01   2.16811e-01  -7.75397e-01
+   8  RawRJpsi     3.02512e-02   7.13298e-03   2.20503e-01  -4.06057e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  60    NPAR=  8    ERR DEF=0.5
+  7.492e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  7.512e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  6.751e+03  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  7.512e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  7.531e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.028e+04  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.997e+03  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  5.129e-05 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.00000   1.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+        2  0.00000   0.000  1.000  0.000  0.000  0.000  0.000  0.000  0.000
+        3  0.00000   0.000  0.000  1.000  0.000  0.000  0.000  0.000  0.000
+        4  0.00000   0.000  0.000  0.000  1.000  0.000  0.000  0.000  0.000
+        5  0.00000   0.000  0.000  0.000  0.000  1.000  0.000  0.000  0.000
+        6  0.00000   0.000  0.000  0.000  0.000  0.000  1.000  0.000  0.000
+        7  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  1.000  0.000
+        8  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  0.000  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **   20 **MIGRAD        4000           1
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM HESSE     STATUS=FAILED          7 CALLS          15 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NBd2JpsiX    7.50000e+01   2.72639e+01   2.16811e-01   9.22464e+00
+   2  NJpsiD       7.50000e+01   2.73585e+01   1.47160e-01   1.35906e+01
+   3  NJpsiDK      2.25000e+02   8.19336e+01   1.83870e-01   1.08773e+01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01   1.47160e-01   1.35906e+01
+   5  NPsi2Mu      7.50000e+00   2.74334e+00   6.38571e-02   3.13199e+01
+   6  NmisID       9.15000e+02   1.41926e+02   2.02131e-01   9.89459e+00
+   7  Nmu          1.50000e+02   5.45278e+01   2.16811e-01   9.22464e+00
+   8  RawRJpsi     3.02512e-02   7.13298e-03   2.20503e-01   9.07017e+00
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM HESSE     STATUS=FAILED          7 CALLS          33 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NBd2JpsiX    7.50000e+01   2.72639e+01  -0.00000e+00   9.22464e+00
+   2  NJpsiD       7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   3  NJpsiDK      2.25000e+02   8.19336e+01  -0.00000e+00   1.08773e+01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   5  NPsi2Mu      7.50000e+00   2.74334e+00  -0.00000e+00   3.13199e+01
+   6  NmisID       9.15000e+02   1.41926e+02  -0.00000e+00   9.89459e+00
+   7  Nmu          1.50000e+02   5.45278e+01  -0.00000e+00   9.22464e+00
+   8  RawRJpsi     3.02512e-02   7.13298e-03  -0.00000e+00   9.07017e+00
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM HESSE     STATUS=FAILED          7 CALLS          51 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NBd2JpsiX    7.50000e+01   2.72639e+01  -0.00000e+00   9.22464e+00
+   2  NJpsiD       7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   3  NJpsiDK      2.25000e+02   8.19336e+01  -0.00000e+00   1.08773e+01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   5  NPsi2Mu      7.50000e+00   2.74334e+00  -0.00000e+00   3.13199e+01
+   6  NmisID       9.15000e+02   1.41926e+02  -0.00000e+00   9.89459e+00
+   7  Nmu          1.50000e+02   5.45278e+01  -0.00000e+00   9.22464e+00
+   8  RawRJpsi     3.02512e-02   7.13298e-03  -0.00000e+00   9.07017e+00
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-1e+30 FROM MIGRAD    STATUS=FAILED         61 CALLS          69 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NBd2JpsiX    7.50000e+01   2.72639e+01  -0.00000e+00   9.22464e+00
+   2  NJpsiD       7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   3  NJpsiDK      2.25000e+02   8.19336e+01  -0.00000e+00   1.08773e+01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   5  NPsi2Mu      7.50000e+00   2.74334e+00  -0.00000e+00   3.13199e+01
+   6  NmisID       9.15000e+02   1.41926e+02  -0.00000e+00   9.89459e+00
+   7  Nmu          1.50000e+02   5.45278e+01  -0.00000e+00   9.22464e+00
+   8  RawRJpsi     3.02512e-02   7.13298e-03  -0.00000e+00   9.07017e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  60    NPAR=  8    ERR DEF=0.5
+  7.492e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  7.512e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  6.751e+03  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  7.512e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  7.531e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.028e+04  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.997e+03  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  5.129e-05 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.00000   1.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+        2  0.00000   0.000  1.000  0.000  0.000  0.000  0.000  0.000  0.000
+        3  0.00000   0.000  0.000  1.000  0.000  0.000  0.000  0.000  0.000
+        4  0.00000   0.000  0.000  0.000  1.000  0.000  0.000  0.000  0.000
+        5  0.00000   0.000  0.000  0.000  0.000  1.000  0.000  0.000  0.000
+        6  0.00000   0.000  0.000  0.000  0.000  0.000  1.000  0.000  0.000
+        7  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  1.000  0.000
+        8  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  0.000  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **   25 **HESSE        4000
+ **********
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM HESSE     STATUS=FAILED          7 CALLS          76 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE     INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  NBd2JpsiX    1.01126e+01   6.69399e+01  -0.00000e+00  -7.75398e-01
+   2  NJpsiD       7.50000e+01   2.73585e+01  -0.00000e+00  -1.01599e+00
+   3  NJpsiDK      2.25000e+02   8.19336e+01  -0.00000e+00  -8.86715e-01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01  -0.00000e+00  -1.01599e+00
+   5  NPsi2Mu      7.50000e+00   2.74334e+00  -0.00000e+00  -1.32523e+00
+   6  NmisID       9.15000e+02   1.41926e+02  -0.00000e+00  -8.51027e-02
+   7  Nmu          1.50000e+02   5.45278e+01  -0.00000e+00  -7.75397e-01
+   8  RawRJpsi     3.02512e-02   7.13298e-03  -0.00000e+00  -4.06057e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  60    NPAR=  8    ERR DEF=0.5
+  7.492e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  7.512e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  6.751e+03  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  7.512e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  7.531e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.028e+04  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.997e+03  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  5.129e-05 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.00000   1.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+        2  0.00000   0.000  1.000  0.000  0.000  0.000  0.000  0.000  0.000
+        3  0.00000   0.000  0.000  1.000  0.000  0.000  0.000  0.000  0.000
+        4  0.00000   0.000  0.000  0.000  1.000  0.000  0.000  0.000  0.000
+        5  0.00000   0.000  0.000  0.000  0.000  1.000  0.000  0.000  0.000
+        6  0.00000   0.000  0.000  0.000  0.000  0.000  1.000  0.000  0.000
+        7  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  1.000  0.000
+        8  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  0.000  1.000
+ ERR MATRIX APPROXIMATE
+32
+ **********
+ **   30 **MINOS        4000           8
+ **********
+ FUNCTION MUST BE MINIMIZED BEFORE CALLING MINOs     
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 5.00e-05
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM HESSE     STATUS=FAILED          7 CALLS          83 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NBd2JpsiX    7.50000e+01   2.72639e+01  -0.00000e+00   9.22464e+00
+   2  NJpsiD       7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   3  NJpsiDK      2.25000e+02   8.19336e+01  -0.00000e+00   1.08773e+01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   5  NPsi2Mu      7.50000e+00   2.74334e+00  -0.00000e+00   3.13199e+01
+   6  NmisID       9.15000e+02   1.41926e+02  -0.00000e+00   9.89459e+00
+   7  Nmu          1.50000e+02   5.45278e+01  -0.00000e+00   9.22464e+00
+   8  RawRJpsi     3.02512e-02   7.13298e-03  -0.00000e+00   9.07017e+00
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM HESSE     STATUS=FAILED          7 CALLS         101 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NBd2JpsiX    7.50000e+01   2.72639e+01  -0.00000e+00   9.22464e+00
+   2  NJpsiD       7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   3  NJpsiDK      2.25000e+02   8.19336e+01  -0.00000e+00   1.08773e+01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   5  NPsi2Mu      7.50000e+00   2.74334e+00  -0.00000e+00   3.13199e+01
+   6  NmisID       9.15000e+02   1.41926e+02  -0.00000e+00   9.89459e+00
+   7  Nmu          1.50000e+02   5.45278e+01  -0.00000e+00   9.22464e+00
+   8  RawRJpsi     3.02512e-02   7.13298e-03  -0.00000e+00   9.07017e+00
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM HESSE     STATUS=FAILED          7 CALLS         119 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NBd2JpsiX    7.50000e+01   2.72639e+01  -0.00000e+00   9.22464e+00
+   2  NJpsiD       7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   3  NJpsiDK      2.25000e+02   8.19336e+01  -0.00000e+00   1.08773e+01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   5  NPsi2Mu      7.50000e+00   2.74334e+00  -0.00000e+00   3.13199e+01
+   6  NmisID       9.15000e+02   1.41926e+02  -0.00000e+00   9.89459e+00
+   7  Nmu          1.50000e+02   5.45278e+01  -0.00000e+00   9.22464e+00
+   8  RawRJpsi     3.02512e-02   7.13298e-03  -0.00000e+00   9.07017e+00
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MACHINE ACCURACY LIMITS FURTHER IMPROVEMENT.
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=-1e+30 FROM MIGRAD    STATUS=FAILED         61 CALLS         137 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  NBd2JpsiX    7.50000e+01   2.72639e+01  -0.00000e+00   9.22464e+00
+   2  NJpsiD       7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   3  NJpsiDK      2.25000e+02   8.19336e+01  -0.00000e+00   1.08773e+01
+   4  NJpsiDq2     7.50000e+01   2.73585e+01  -0.00000e+00   1.35906e+01
+   5  NPsi2Mu      7.50000e+00   2.74334e+00  -0.00000e+00   3.13199e+01
+   6  NmisID       9.15000e+02   1.41926e+02  -0.00000e+00   9.89459e+00
+   7  Nmu          1.50000e+02   5.45278e+01  -0.00000e+00   9.22464e+00
+   8  RawRJpsi     3.02512e-02   7.13298e-03  -0.00000e+00   9.07017e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  60    NPAR=  8    ERR DEF=0.5
+  7.492e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  7.512e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  6.751e+03  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  7.512e+02  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  7.531e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.028e+04  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.997e+03  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  5.129e-05 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.00000   1.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+        2  0.00000   0.000  1.000  0.000  0.000  0.000  0.000  0.000  0.000
+        3  0.00000   0.000  0.000  1.000  0.000  0.000  0.000  0.000  0.000
+        4  0.00000   0.000  0.000  0.000  1.000  0.000  0.000  0.000  0.000
+        5  0.00000   0.000  0.000  0.000  0.000  1.000  0.000  0.000  0.000
+        6  0.00000   0.000  0.000  0.000  0.000  0.000  1.000  0.000  0.000
+        7  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  1.000  0.000
+        8  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  0.000  1.000
+ ERR MATRIX APPROXIMATE
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter1
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=-1e+30 FROM MINOS     STATUS=SUCCESSFUL     30 CALLS         174 TOTAL
+                     EDM=32    STRATEGY= 2  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  NBd2JpsiX    7.50000e+01   6.69399e+01                            
+   2  NJpsiD       7.50000e+01   2.73585e+01                            
+   3  NJpsiDK      2.25000e+02   8.19336e+01                            
+   4  NJpsiDq2     7.50000e+01   2.73585e+01                            
+   5  NPsi2Mu      7.50000e+00   2.74334e+00                            
+   6  NmisID       9.15000e+02   1.41926e+02                            
+   7  Nmu          1.50000e+02   5.45278e+01                            
+   8  RawRJpsi     3.02512e-02   7.13298e-03          -inf           inf
+                               ERR DEF= 0.5
+Fit ran with status 0
+Stat error on R(Jpsi) is 0.007133
+EDM at end was 32.000000
+RooArgList:: = (NBd2JpsiX,NJpsiD,NJpsiDK,NJpsiDq2,NPsi2Mu,NmisID,Nmu,RawRJpsi)
+CURRENT NUISANCE PARAMETERS:
+0: NBd2JpsiX			 = 75 +/- 66.9399
+1: NJpsiD			 = 75 +/- 27.3585
+2: NJpsiDK			 = 225 +/- 81.9336
+3: NJpsiDq2			 = 75 +/- 27.3585
+4: NPsi2Mu			 = 7.5 +/- 2.74334
+5: NmisID			 = 915 +/- 141.926
+6: Nmu			 = 150 +/- 54.5278
+
+8x8 matrix is as follows
+
+     |      0    |      1    |      2    |      3    |      4    |
+----------------------------------------------------------------------
+   0 |          1           0           0           0           0 
+   1 |          0           1           0           0           0 
+   2 |          0           0           1           0           0 
+   3 |          0           0           0           1           0 
+   4 |          0           0           0           0           1 
+   5 |          0           0           0           0           0 
+   6 |          0           0           0           0           0 
+   7 |          0           0           0           0           0 
+
+
+     |      5    |      6    |      7    |
+----------------------------------------------------------------------
+   0 |          0           0           0 
+   1 |          0           0           0 
+   2 |          0           0           0 
+   3 |          0           0           0 
+   4 |          0           0           0 
+   5 |          1           0           0 
+   6 |          0           1           0 
+   7 |          0           0           1 
+
+Stopwatch: fit ran in 0.084063 seconds with 0.385342 seconds in prep
+Starting plots
