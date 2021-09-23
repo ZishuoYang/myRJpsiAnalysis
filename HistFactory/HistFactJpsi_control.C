@@ -65,13 +65,13 @@ void HistFactJpsi_control() {
     cout << date->Get()%100000 << endl; //For ToyMC, so I can run multiple copies 
                                         //with different seeds without recompiling
 
-  RooMsgService::instance().setGlobalKillBelow(RooFit::ERROR) ; //avoid accidental unblinding!
+  RooMsgService::instance().setGlobalKillBelow(RooFit::WARNING) ; //avoid accidental unblinding!
 
   // Below: Read histogram file to generate normalization constants required to make
   // each histo normalized to unity. Not totally necessary here, but convenient
 
 
-  TFile q("Histos_20210920.root");
+  TFile q("Histos_20210923.root");
   TH1 *htemp;
   TString mchistos[9]={"sigmu","sigtau","Psi2SMu","JpsiD","JpsiDq2","JpsiDK","misID_2016","fakeJpsi","Bd2JpsiX"
                         };
@@ -139,7 +139,7 @@ void HistFactJpsi_control() {
   // we are fitting
 
   // actually, now this is only used for the misID
-  meas.SetLumi(0.0377);
+  meas.SetLumi(1.000);
   meas.SetLumiRelErr(0.005);
 
   /******* Fit starting constants ***********/
@@ -148,7 +148,7 @@ void HistFactJpsi_control() {
   //*
   const double expTau =0.252*0.1742*0.781/0.85;
   //const double e_iso = 0.314;
-  double expMu = 2e2;
+  double expMu = 1e2;
   //*/
 
   double RelLumi = 0.25;
@@ -158,7 +158,7 @@ void HistFactJpsi_control() {
 
 
   // tell histfactory what data to use
-  chan.SetData("h_data_subset", "Histos_20210920.root");
+  chan.SetData("h_data_subset", "Histos_20210923.root");
 
 
   // Now that data is set up, start creating our samples
@@ -166,7 +166,7 @@ void HistFactJpsi_control() {
 
   /*********************** Bc->Jpsimunu (NORM) *******************************/
 
-  RooStats::HistFactory::Sample sigmu("h_sigmu","h_sigmu", "Histos_20210920.root");
+  RooStats::HistFactory::Sample sigmu("h_sigmu","h_sigmu", "Histos_20210923.root");
   if(useMuShapeUncerts)
   {
     sigmu.AddHistoSys("v1mu","h_sigmu_v1m","Histos.root","","h_sigmu_v1p","Histos.root","");
@@ -179,7 +179,7 @@ void HistFactJpsi_control() {
   
   /************************* Bc->Jpsitaunu (SIGNAL) *******************************/
 
-  RooStats::HistFactory::Sample sigtau("h_sigtau","h_sigtau", "Histos_20210920.root");
+  RooStats::HistFactory::Sample sigtau("h_sigtau","h_sigtau", "Histos_20210923.root");
   if(useTauShapeUncerts)
   {
     sigtau.AddHistoSys("v1mu","h_sigtau_v1m","Histos.root","","h_sigtau_v1p","Histos.root","");
@@ -193,7 +193,7 @@ void HistFactJpsi_control() {
   
   /************************* Bc->Psi2SMuNu *******************************/
 
-  RooStats::HistFactory::Sample Psi2SMu("h_Psi2SMu","h_Psi2SMu", "Histos_20210920.root");
+  RooStats::HistFactory::Sample Psi2SMu("h_Psi2SMu","h_Psi2SMu", "Histos_20210923.root");
   if(BBon3d) Psi2SMu.ActivateStatError();
   Psi2SMu.SetNormalizeByTheory(kFALSE);
   Psi2SMu.AddNormFactor("mcNorm_Psi2SMu", mcN_Psi2SMu, 1e-9, 1.);
@@ -202,16 +202,16 @@ void HistFactJpsi_control() {
   
  /************************* Bc->JpsiD *******************************/
 
-  RooStats::HistFactory::Sample JpsiD2("h_JpsiD","h_JpsiD", "Histos_20210920.root");
-  if(BBon3d) JpsiD2.ActivateStatError();
-  JpsiD2.SetNormalizeByTheory(kFALSE);
-  JpsiD2.AddNormFactor("mcNorm_JpsiD", mcN_JpsiD, 1e-9, 1.);
-  JpsiD2.AddNormFactor("NJpsiD",1e2,1e-6,1e3);
-  chan.AddSample(JpsiD2);
+  RooStats::HistFactory::Sample JpsiD2body("h_JpsiD2body","h_JpsiD", "Histos_20210923.root");
+  if(BBon3d) JpsiD2body.ActivateStatError();
+  JpsiD2body.SetNormalizeByTheory(kFALSE);
+  JpsiD2body.AddNormFactor("mcNorm_JpsiD", mcN_JpsiD, 1e-9, 1.);
+  JpsiD2body.AddNormFactor("NJpsiD",1e2,1e-6,1e3);
+  chan.AddSample(JpsiD2body);
  
  /************************* Bc->Chi_c{1,2}munu *******************************/
 
-  RooStats::HistFactory::Sample JpsiDq2("h_JpsiDq2","h_JpsiDq2", "Histos_20210920.root");
+  RooStats::HistFactory::Sample JpsiDq2("h_JpsiDq2","h_JpsiDq2", "Histos_20210923.root");
   if(BBon3d) JpsiDq2.ActivateStatError();
   JpsiDq2.SetNormalizeByTheory(kFALSE);
   JpsiDq2.AddNormFactor("mcNorm_JpsiDq2", mcN_JpsiDq2, 1e-9, 1.);
@@ -220,7 +220,7 @@ void HistFactJpsi_control() {
  
  /************************* Bc->JpsiDK *******************************/
 
-  RooStats::HistFactory::Sample JpsiDK("h_JpsiDK","h_JpsiDK", "Histos_20210920.root");
+  RooStats::HistFactory::Sample JpsiDK("h_JpsiDK","h_JpsiDK", "Histos_20210923.root");
   if(BBon3d) JpsiDK.ActivateStatError();
   JpsiDK.SetNormalizeByTheory(kFALSE);
   JpsiDK.AddNormFactor("mcNorm_JpsiDK", mcN_JpsiDK, 1e-9, 1.);
@@ -229,7 +229,7 @@ void HistFactJpsi_control() {
  
  /************************* Bu,d->JpsiX *******************************/
 
-  RooStats::HistFactory::Sample Bd2JpsiX("h_Bd2JpsiX","h_Bd2JpsiX", "Histos_20210920.root");
+  RooStats::HistFactory::Sample Bd2JpsiX("h_Bd2JpsiX","h_Bd2JpsiX", "Histos_20210923.root");
   if(BBon3d) Bd2JpsiX.ActivateStatError();
   Bd2JpsiX.SetNormalizeByTheory(kFALSE);
   Bd2JpsiX.AddNormFactor("mcNorm_Bd2JpsiX", mcN_Bd2JpsiX, 1e-9, 1.);
@@ -238,21 +238,21 @@ void HistFactJpsi_control() {
 
   /*********************** MisID BKG (FROM DATA)  *******************************/
 
-  RooStats::HistFactory::Sample misID("h_misID_2016","h_misID_2016", "Histos_20210920.root");
+  RooStats::HistFactory::Sample misID("h_misID_2016","h_misID_2016", "Histos_20210923.root");
   if(BBon3d) misID.ActivateStatError();
   misID.SetNormalizeByTheory(kFALSE);
   //misID.AddNormFactor("NmisID",RelLumi,1e-6,1e4);
   misID.AddNormFactor("mcNorm_misID", mcN_misID, 1e-9, 1.);
-  misID.AddNormFactor("NmisID",1220.,1e-6,2e3);
+  misID.AddNormFactor("NmisID",1021,1e-6,2e3);
   chan.AddSample(misID);
 
   /*********************** Fake Jpsi BKG (FROM DATA)  *******************************/
 
-  RooStats::HistFactory::Sample fakeJpsi("h_fakeJpsi","h_fakeJpsi", "Histos_20210920.root");
+  RooStats::HistFactory::Sample fakeJpsi("h_fakeJpsi","h_fakeJpsi", "Histos_20210923.root");
   if(BBon3d) fakeJpsi.ActivateStatError();
   fakeJpsi.SetNormalizeByTheory(kFALSE);
   fakeJpsi.AddNormFactor("mcNorm_fakeJpsi", mcN_fakeJpsi, mcN_fakeJpsi, mcN_fakeJpsi,kTRUE);
-  fakeJpsi.AddNormFactor("NfakeJpsi",20.,20.,20.,kTRUE);
+  fakeJpsi.AddNormFactor("NfakeJpsi",2.,2.,2.,kTRUE);
   chan.AddSample(fakeJpsi);
  
   /************************* B0->D1munu **************************************/
@@ -348,6 +348,7 @@ void HistFactJpsi_control() {
      ((RooRealVar*)(mc->GetNuisanceParameters()->find("mcNorm_misID")))->setConstant(kTRUE);
      ((RooRealVar*)(mc->GetNuisanceParameters()->find("NfakeJpsi")))->setConstant(kTRUE);
      ((RooRealVar*)(mc->GetNuisanceParameters()->find("Lumi")))->setConstant(kTRUE);
+     //((RooRealVar*)(mc->GetNuisanceParameters()->find("NBd2JpsiX")))->setConstant(kTRUE);
 
 ///  if(useDststShapeUncerts) ((RooRealVar*)(mc->GetNuisanceParameters()->find("alpha_IW")))->setRange(-3.0,3.0);  
 ///  if(useMuShapeUncerts) ((RooRealVar*)(mc->GetNuisanceParameters()->find("alpha_v1mu")))->setRange(-8,8);
@@ -666,14 +667,14 @@ if(result != NULL)
       for (int i = 0; i < nframes; i++){
         data->plotOn(drawframes[i],DataError(RooAbsData::Poisson),Cut("channelCat==0"),MarkerSize(0.4),DrawOption("ZP"));
         model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kRed));
-        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kGreen+3),Components("*misID*,*sigmu*,*Psi2SMu*,*JpsiD2*,*fakeJpsi*,*JpsiDq2*,*Bd2JpsiX*,*JpsiDK*"));
-        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kOrange+2),Components("*misID*,*sigmu*,*Psi2SMu*,*JpsiD2*,*fakeJpsi*,*JpsiDq2*,*Bd2JpsiX*"));
-        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kGreen+1),Components("*misID*,*sigmu*,*Psi2SMu*,*JpsiD2*,*fakeJpsi*,*JpsiDq2*"));
-        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kOrange+1),Components("*misID*,*sigmu*,*Psi2SMu*,*JpsiD2*,*fakeJpsi*"));
-        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kGreen),Components("*misID*,*sigmu*,*Psi2SMu*,*JpsiD2*"));
-        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kViolet),Components("*misID*,*sigmu*,*Psi2SMu*"));
-        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kBlue+1),Components("*misID*,*sigmu*"));
-        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kOrange),Components("*misID*"));
+        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kOrange+2),Components("*misID*,*sigmu*,*Psi2SMu*,*fakeJpsi*,*JpsiD2body*,*JpsiDq2*,*JpsiDK*,*Bd2JpsiX*"));
+        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kGreen+3), Components("*misID*,*sigmu*,*Psi2SMu*,*fakeJpsi*,*JpsiD2body*,*JpsiDq2*,*JpsiDK*"));
+        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kGreen+1), Components("*misID*,*sigmu*,*Psi2SMu*,*fakeJpsi*,*JpsiD2body*,*JpsiDq2*"));
+        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kGreen),   Components("*misID*,*sigmu*,*Psi2SMu*,*fakeJpsi*,*JpsiD2body*"));
+        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kOrange+1),Components("*misID*,*sigmu*,*Psi2SMu*,*fakeJpsi*"));
+        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kViolet),  Components("*misID*,*sigmu*,*Psi2SMu*"));
+        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kBlue+1),  Components("*misID*,*sigmu*"));
+        model_hf->plotOn(drawframes[i], Slice(*idx),ProjWData(*idx,*data),DrawOption("F"),FillColor(kOrange),  Components("*misID*"));
         resids[i]=drawframes[i]->pullHist();
         data->plotOn(drawframes[i],DataError(RooAbsData::Poisson),Cut("channelCat==0"),MarkerSize(0.4),DrawOption("ZP"));
 
