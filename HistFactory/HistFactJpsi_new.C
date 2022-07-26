@@ -71,7 +71,7 @@ void HistFactJpsi_new() {
   // each histo normalized to unity. Not totally necessary here, but convenient
 
 
-  TFile q("Histos_20220421.root");
+  TFile q("Histos_20220721.root");
   TH1 *htemp;
   TString mchistos[8]={"sigmu","sigtau","Psi2SMu","JpsiDx","ChiMu","misID","fakeJpsi","Bd2JpsiX"
                         };
@@ -159,7 +159,7 @@ void HistFactJpsi_new() {
 
 
   // tell histfactory what data to use
-  chan.SetData("h_data_subset", "Histos_20220421.root");
+  chan.SetData("h_data_subset", "Histos_20220721.root");
 
 
   // Now that data is set up, start creating our samples
@@ -167,7 +167,7 @@ void HistFactJpsi_new() {
 
   /*********************** Bc->Jpsimunu (NORM) *******************************/
 
-  RooStats::HistFactory::Sample sigmu("h_sigmu","h_sigmu", "Histos_20220421.root");
+  RooStats::HistFactory::Sample sigmu("h_sigmu","h_sigmu", "Histos_20220721.root");
   if(useMuShapeUncerts)
   {
     sigmu.AddHistoSys("v1mu","h_sigmu_v1m","Histos.root","","h_sigmu_v1p","Histos.root","");
@@ -180,7 +180,7 @@ void HistFactJpsi_new() {
   
   /************************* Bc->Jpsitaunu (SIGNAL) *******************************/
 
-  RooStats::HistFactory::Sample sigtau("h_sigtau","h_sigtau", "Histos_20220421.root");
+  RooStats::HistFactory::Sample sigtau("h_sigtau","h_sigtau", "Histos_20220721.root");
   if(useTauShapeUncerts)
   {
     sigtau.AddHistoSys("v1mu","h_sigtau_v1m","Histos.root","","h_sigtau_v1p","Histos.root","");
@@ -194,7 +194,7 @@ void HistFactJpsi_new() {
   
   /************************* Bc->Psi2SMuNu *******************************/
 
-  RooStats::HistFactory::Sample Psi2SMu("h_Psi2SMu","h_Psi2SMu", "Histos_20220421.root");
+  RooStats::HistFactory::Sample Psi2SMu("h_Psi2SMu","h_Psi2SMu", "Histos_20220721.root");
   if(BBon3d) Psi2SMu.ActivateStatError();
   Psi2SMu.SetNormalizeByTheory(kFALSE);
   Psi2SMu.AddNormFactor("mcNorm_Psi2SMu", mcN_Psi2SMu, 1e-9, 1.);
@@ -203,7 +203,7 @@ void HistFactJpsi_new() {
   
  /************************* Bc->JpsiDx *******************************/
 
-  RooStats::HistFactory::Sample JpsiDx("h_JpsiDx","h_JpsiDx", "Histos_20220421.root");
+  RooStats::HistFactory::Sample JpsiDx("h_JpsiDx","h_JpsiDx", "Histos_20220721.root");
   if(BBon3d) JpsiDx.ActivateStatError();
   JpsiDx.SetNormalizeByTheory(kFALSE);
   JpsiDx.AddNormFactor("mcNorm_JpsiDx", mcN_JpsiDx, 1e-9, 1.);
@@ -212,16 +212,16 @@ void HistFactJpsi_new() {
  
  /************************* Bc->Chi_c{1,2}munu *******************************/
 
-  RooStats::HistFactory::Sample ChicMu("h_ChiMu","h_ChiMu", "Histos_20220421.root");
+  RooStats::HistFactory::Sample ChicMu("h_ChiMu","h_ChiMu", "Histos_20220721.root");
   if(BBon3d) ChicMu.ActivateStatError();
   ChicMu.SetNormalizeByTheory(kFALSE);
   ChicMu.AddNormFactor("mcNorm_ChicMu", mcN_ChicMu, 1e-9, 1.);
-  ChicMu.AddNormFactor("NChicMu",1e2*0.8,1e-6,1e2);
+  ChicMu.AddNormFactor("NChicMu",1e2*0.8,1e-6,2e2);
   chan.AddSample(ChicMu);
  
  /************************* Bu,d->JpsiX *******************************/
 
-  RooStats::HistFactory::Sample Bd2JpsiX("h_Bd2JpsiX","h_Bd2JpsiX", "Histos_20220421.root");
+  RooStats::HistFactory::Sample Bd2JpsiX("h_Bd2JpsiX","h_Bd2JpsiX", "Histos_20220721.root");
   if(BBon3d) Bd2JpsiX.ActivateStatError();
   Bd2JpsiX.SetNormalizeByTheory(kFALSE);
   Bd2JpsiX.AddNormFactor("mcNorm_Bd2JpsiX", mcN_Bd2JpsiX, 1e-9, 1.);
@@ -230,24 +230,24 @@ void HistFactJpsi_new() {
 
   /*********************** MisID BKG (FROM DATA)  *******************************/
 
-  RooStats::HistFactory::Sample misID("h_misID","h_misID_smear", "Histos_20220421.root");
+  RooStats::HistFactory::Sample misID("h_misID","h_misID_smear", "Histos_20220721.root");
   if(BBon3d) misID.ActivateStatError();
   misID.SetNormalizeByTheory(kFALSE);
   //misID.AddNormFactor("NmisID",RelLumi,1e-6,1e4);
   if (floatMisIDSmear){ // MisID smearing
-	misID.AddHistoSys("misID_smear","h_misID","Histos_20220421.root","","h_misID_doublesmear","Histos_20220421.root","");
+	misID.AddHistoSys("misID_smear","h_misID","Histos_20220721.root","","h_misID_doublesmear","Histos_20220721.root","");
   }
   misID.AddNormFactor("mcNorm_misID", mcN_misID, 1e-9, 1.);
-  misID.AddNormFactor("NmisID",2e3*0.7,1e-6,3e3);
+  misID.AddNormFactor("NmisID",1e3*0.7,1e-6,3e3);
   chan.AddSample(misID);
 
   /*********************** Fake Jpsi BKG (FROM DATA)  *******************************/
 
-  RooStats::HistFactory::Sample fakeJpsi("h_fakeJpsi","h_fakeJpsi", "Histos_20220421.root");
+  RooStats::HistFactory::Sample fakeJpsi("h_fakeJpsi","h_fakeJpsi", "Histos_20220721.root");
   if(BBon3d) fakeJpsi.ActivateStatError();
   fakeJpsi.SetNormalizeByTheory(kFALSE);
   fakeJpsi.AddNormFactor("mcNorm_fakeJpsi", mcN_fakeJpsi, 1e-9,1.);
-  fakeJpsi.AddNormFactor("NfakeJpsi",262.,262.,262.);
+  fakeJpsi.AddNormFactor("NfakeJpsi",162.,162.,162.);
   chan.AddSample(fakeJpsi);
  
   /************************* B0->D1munu **************************************/
@@ -790,9 +790,9 @@ if(result != NULL)
   t->DrawLatex(11.1e6,q2_frame->GetMaximum()*0.95,"");
 
 
-      RooPlot *mm2_resid_frame=x->frame(Title("mm2"));
-      RooPlot *El_resid_frame=y->frame(Title("ctau"));
-      RooPlot *q2_resid_frame=z->frame(Title("Z"));
+      RooPlot *mm2_resid_frame=x->frame(Title(" "));
+      RooPlot *El_resid_frame=y->frame(Title(" "));
+      RooPlot *q2_resid_frame=z->frame(Title(" "));
       RooPlot *DOCA_resid_frame;
 
       cerr << __LINE__ << endl;
@@ -807,12 +807,21 @@ if(result != NULL)
       c3->Divide(3,1);
       c3->cd(1);
       c3->cd(1)->SetGridy(1);
+      mm2_resid_frame->SetMinimum(-3);
+      mm2_resid_frame->SetMaximum(3);
+      mm2_resid_frame->SetLabelSize(0.09,"Y");
       mm2_resid_frame->Draw();
       c3->cd(2);
       c3->cd(2)->SetGridy(1);
+      El_resid_frame->SetMinimum(-3);
+      El_resid_frame->SetMaximum(3);
+      El_resid_frame->SetLabelSize(0.09,"Y");
       El_resid_frame->Draw();
       c3->cd(3);
       c3->cd(3)->SetGridy(1);
+      q2_resid_frame->SetMinimum(-3);
+      q2_resid_frame->SetMaximum(3);
+      q2_resid_frame->SetLabelSize(0.09,"Y");
       q2_resid_frame->Draw();
       
       TCanvas *c2;
